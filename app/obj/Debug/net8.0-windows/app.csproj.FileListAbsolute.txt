@@ -1,0 +1,232 @@
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\app.exe
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\app.deps.json
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\app.runtimeconfig.json
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\app.pdb
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.csproj.AssemblyReference.cache
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.csproj.GenerateResource.cache
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.AssemblyInfoInputs.cache
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.AssemblyInfo.cs
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.csproj.CoreCompileInputs.cache
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.csproj.Up2Date
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\refint\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.pdb
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.genruntimeconfig.cache
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\ref\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\cmd.bat
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\cmd.sh
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\ToolBox.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormHome.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormMainMenu.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormSupplier.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormNewBill.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormProduct.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormStaff.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormStatistical.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormWarehouse.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormLogin.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.Properties.Resources.resources
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app\app\obj\Debug\net8.0-windows\app.FormRegister.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.csproj.AssemblyReference.cache
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormHome.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormLogin.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormMainMenu.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormNewBill.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormProduct.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormRegister.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormStaff.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormStatistical.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormSupplier.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.FormWarehouse.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.Properties.Resources.resources
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.csproj.GenerateResource.cache
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.AssemblyInfoInputs.cache
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.AssemblyInfo.cs
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.csproj.CoreCompileInputs.cache
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.dll
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\refint\app.dll
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.pdb
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\cmd.bat
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\cmd.sh
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\app.exe
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\app.deps.json
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\app.runtimeconfig.json
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\app.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\app.pdb
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\ToolBox.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\htuan\Downloads\app2\app\app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.csproj.Up2Date
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\app.genruntimeconfig.cache
+C:\Users\htuan\Downloads\app2\app\app\obj\Debug\net8.0-windows\ref\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.csproj.AssemblyReference.cache
+C:\Users\htuan\OneDrive\Tài liệu\winform\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\refint\app.dll
+C:\Users\htuan\OneDrive\Tài liệu\winform\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.pdb
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\cmd.bat
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\cmd.sh
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\app.exe
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\app.deps.json
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\app.runtimeconfig.json
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\app.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\app.pdb
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\ToolBox.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Wordspace\app_ngay6_9_2024\app\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.csproj.AssemblyReference.cache
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormHome.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormLogin.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormMainMenu.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormNewBill.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormProduct.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormRegister.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormStaff.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormStatistical.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormSupplier.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.FormWarehouse.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.Properties.Resources.resources
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.csproj.GenerateResource.cache
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.AssemblyInfoInputs.cache
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.AssemblyInfo.cs
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.csproj.CoreCompileInputs.cache
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.csproj.Up2Date
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.dll
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\refint\app.dll
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.pdb
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\app.genruntimeconfig.cache
+C:\Wordspace\app_ngay6_9_2024\app\obj\Debug\net8.0-windows\ref\app.dll
