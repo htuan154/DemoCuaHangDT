@@ -60,34 +60,7 @@ namespace app
 
 
 
-        private void EnableControls(List<Control> controls)
-        {
-            foreach (Control control in controls)
-            {
-                control.Enabled = true;
-            }
-        }
-
-
-        private void UnEnableControls(List<Control> controls)
-        {
-            foreach (Control control in controls)
-            {
-                control.Enabled = false;
-            }
-        }
-
-        private void ResetText(List<Control> controls)
-        {
-            foreach (Control control in controls)
-                control.Text = "";
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            EnableControls(new List<Control> { txtMaNCC, txtTenNCC, txtSDTNCC, txtEmail });
-            ResetText(new List<Control> { txtMaNCC, txtTenNCC, txtSDTNCC, txtEmail });
-        }
+       
 
         private void listNhaCungCap_CellClick(object sender, DataGridViewCellEventArgs e)
         {

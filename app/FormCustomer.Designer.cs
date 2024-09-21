@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             panel6 = new Panel();
-            listNhaCungCap = new DataGridView();
+            list = new DataGridView();
             panel5 = new Panel();
+            label3 = new Label();
+            txtDiaChiKH = new TextBox();
             panel1 = new Panel();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             txtTimKiem = new TextBox();
@@ -50,10 +52,8 @@
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
-            txtDiaChiKH = new TextBox();
-            label3 = new Label();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)listNhaCungCap).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)list).BeginInit();
             panel5.SuspendLayout();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
@@ -61,20 +61,20 @@
             // 
             // panel6
             // 
-            panel6.Controls.Add(listNhaCungCap);
+            panel6.Controls.Add(list);
             panel6.Location = new Point(12, 293);
             panel6.Name = "panel6";
             panel6.Size = new Size(1025, 311);
             panel6.TabIndex = 8;
             // 
-            // listNhaCungCap
+            // list
             // 
-            listNhaCungCap.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listNhaCungCap.Location = new Point(14, 3);
-            listNhaCungCap.Name = "listNhaCungCap";
-            listNhaCungCap.RowHeadersWidth = 51;
-            listNhaCungCap.Size = new Size(996, 283);
-            listNhaCungCap.TabIndex = 0;
+            list.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            list.Location = new Point(14, 3);
+            list.Name = "list";
+            list.RowHeadersWidth = 51;
+            list.Size = new Size(996, 283);
+            list.TabIndex = 0;
             // 
             // panel5
             // 
@@ -97,6 +97,24 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(1023, 301);
             panel5.TabIndex = 7;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(94, 164);
+            label3.Name = "label3";
+            label3.Size = new Size(147, 19);
+            label3.TabIndex = 16;
+            label3.Text = "Địa Chỉ Khách Hàng";
+            // 
+            // txtDiaChiKH
+            // 
+            txtDiaChiKH.Location = new Point(249, 156);
+            txtDiaChiKH.Name = "txtDiaChiKH";
+            txtDiaChiKH.Size = new Size(269, 27);
+            txtDiaChiKH.TabIndex = 15;
             // 
             // panel1
             // 
@@ -188,6 +206,7 @@
             btnLamMoi.TextAlign = ContentAlignment.MiddleLeft;
             btnLamMoi.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnLamMoi.UseVisualStyleBackColor = false;
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // btnXoa
             // 
@@ -210,6 +229,7 @@
             btnXoa.TextAlign = ContentAlignment.MiddleLeft;
             btnXoa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnSua
             // 
@@ -232,6 +252,7 @@
             btnSua.TextAlign = ContentAlignment.MiddleLeft;
             btnSua.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
             // btnThem
             // 
@@ -254,6 +275,7 @@
             btnThem.TextAlign = ContentAlignment.MiddleLeft;
             btnThem.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
             // txtEmailKH
             // 
@@ -338,24 +360,6 @@
             label4.TabIndex = 0;
             label4.Text = "Quản lý khách hàng";
             // 
-            // txtDiaChiKH
-            // 
-            txtDiaChiKH.Location = new Point(249, 156);
-            txtDiaChiKH.Name = "txtDiaChiKH";
-            txtDiaChiKH.Size = new Size(269, 27);
-            txtDiaChiKH.TabIndex = 15;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(94, 164);
-            label3.Name = "label3";
-            label3.Size = new Size(147, 19);
-            label3.TabIndex = 16;
-            label3.Text = "Địa Chỉ Khách Hàng";
-            // 
             // FormCustomer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -366,8 +370,9 @@
             Controls.Add(panel5);
             Name = "FormCustomer";
             Text = "FormCustomer";
+            Load += FormCustomer_Load;
             panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)listNhaCungCap).EndInit();
+            ((System.ComponentModel.ISupportInitialize)list).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel1.ResumeLayout(false);
@@ -379,7 +384,7 @@
         #endregion
 
         private Panel panel6;
-        private DataGridView listNhaCungCap;
+        private DataGridView list;
         private Panel panel5;
         private Panel panel1;
         private FontAwesome.Sharp.IconButton iconButton1;
