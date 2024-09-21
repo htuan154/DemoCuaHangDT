@@ -79,15 +79,15 @@ namespace app
 
             DataGridViewRow row = list.Rows[rowId];
 
-            textBox1.Text = row.Cells[0].Value.ToString();
-            textBox8.Text = row.Cells[1].Value.ToString();
-            comboBox1.Text = row.Cells[2].Value.ToString();
-            comboBox2.Text = row.Cells[4].Value.ToString();
-            comboBox3.Text = row.Cells[7].Value.ToString();
-            comboBox4.Text = row.Cells[6].Value.ToString();
+            txtMaSP.Text = row.Cells[0].Value.ToString();
+            txtNCC.Text = row.Cells[1].Value.ToString();
+            cbTenSP.Text = row.Cells[2].Value.ToString();
+            cbHang.Text = row.Cells[4].Value.ToString();
+            cbLoai.Text = row.Cells[7].Value.ToString();
+            cbXuatXu.Text = row.Cells[6].Value.ToString();
 
 
-            textBox4.Text = Convert.ToDouble(row.Cells[5].Value).ToString();
+            txtGia.Text = Convert.ToDouble(row.Cells[5].Value).ToString();
 
         }
         private void LoadComboBoxData()
@@ -100,9 +100,9 @@ namespace app
                 DataTable table1 = DataProvider.Instance.ExecuteQuery(query1, commandType: CommandType.Text);
                 if (table1 != null && table1.Rows.Count > 0)
                 {
-                    comboBox1.DataSource = table1;
-                    comboBox1.DisplayMember = "ten_san_pham"; 
-                    comboBox1.ValueMember = "ten_san_pham"; 
+                    cbTenSP.DataSource = table1;
+                    cbTenSP.DisplayMember = "ten_san_pham"; 
+                    cbTenSP.ValueMember = "ten_san_pham"; 
                 }
 
                 // ComboBox2 - Hiển thị danh sách hãng sản xuất
@@ -110,9 +110,9 @@ namespace app
                 DataTable table2 = DataProvider.Instance.ExecuteQuery(query2, commandType: CommandType.Text);
                 if (table2 != null && table2.Rows.Count > 0)
                 {
-                    comboBox2.DataSource = table2;
-                    comboBox2.DisplayMember = "hang";
-                    comboBox2.ValueMember = "hang";
+                    cbHang.DataSource = table2;
+                    cbHang.DisplayMember = "hang";
+                    cbHang.ValueMember = "hang";
                 }
 
                 // ComboBox3 - Hiển thị danh sách loại sản phẩm
@@ -120,9 +120,9 @@ namespace app
                 DataTable table3 = DataProvider.Instance.ExecuteQuery(query3, commandType: CommandType.Text);
                 if (table3 != null && table3.Rows.Count > 0)
                 {
-                    comboBox3.DataSource = table3;
-                    comboBox3.DisplayMember = "loai";
-                    comboBox3.ValueMember = "loai";
+                    cbLoai.DataSource = table3;
+                    cbLoai.DisplayMember = "loai";
+                    cbLoai.ValueMember = "loai";
                 }
 
                 // ComboBox4 - Hiển thị danh sách xuất xứ
@@ -130,9 +130,9 @@ namespace app
                 DataTable table4 = DataProvider.Instance.ExecuteQuery(query4, commandType: CommandType.Text);
                 if (table4 != null && table4.Rows.Count > 0)
                 {
-                    comboBox4.DataSource = table4;
-                    comboBox4.DisplayMember = "xuat_xu";
-                    comboBox4.ValueMember = "xuat_xu";
+                    cbXuatXu.DataSource = table4;
+                    cbXuatXu.DisplayMember = "xuat_xu";
+                    cbXuatXu.ValueMember = "xuat_xu";
                 }
             }
             catch (Exception ex)
@@ -211,11 +211,11 @@ namespace app
                 
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                    new SqlParameter("@ma_san_pham", SqlDbType.NVarChar, 10) { Value = textBox1.Text },
-                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.NVarChar, 50) { Value = textBox8.Text },
+                    new SqlParameter("@ma_san_pham", SqlDbType.NVarChar, 10) { Value = txtMaSP.Text },
+                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.NVarChar, 50) { Value = txtNCC.Text },
                     new SqlParameter("@ten_san_pham", SqlDbType.NVarChar, 100) { Value = tenSP },
                     new SqlParameter("@hang", SqlDbType.NVarChar, 50) { Value = hangSP },
-                    new SqlParameter("@gia", SqlDbType.Decimal) { Value = Convert.ToDecimal(textBox4.Text) },
+                    new SqlParameter("@gia", SqlDbType.Decimal) { Value = Convert.ToDecimal(txtGia.Text) },
                     new SqlParameter("@loai", SqlDbType.NVarChar, 50) { Value = loaiSP },
                     new SqlParameter("@xuat_xu", SqlDbType.NVarChar, 50) { Value = xuatxuSP }
                 };
@@ -253,10 +253,10 @@ namespace app
             try
             {
                 
-                string maSanPham = textBox1.Text.Trim();
+                string maSanPham = txtMaSP.Text.Trim();
                 string tenSanPham = tenSP; 
                 string hang = hangSP; 
-                decimal gia = Convert.ToDecimal(textBox4.Text.Trim());
+                decimal gia = Convert.ToDecimal(txtGia.Text.Trim());
                 string xuatXu = xuatxuSP; 
                 string loai = loaiSP; 
 
@@ -310,7 +310,7 @@ namespace app
             try
             {
                 
-                string maSanPham = textBox1.Text.Trim();
+                string maSanPham = txtMaSP.Text.Trim();
 
                 if (string.IsNullOrEmpty(maSanPham))
                 {

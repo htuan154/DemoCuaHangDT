@@ -85,8 +85,8 @@ namespace app
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            EnableControls(new List<Control> { textBox1, textBox2, textBox3, textBox4 });
-            ResetText(new List<Control> { textBox1, textBox2, textBox3, textBox4 });
+            EnableControls(new List<Control> { txtMaNCC, txtTenNCC, txtSDTNCC, txtEmail });
+            ResetText(new List<Control> { txtMaNCC, txtTenNCC, txtSDTNCC, txtEmail });
         }
 
         private void listNhaCungCap_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -99,13 +99,13 @@ namespace app
 
             DataGridViewRow row = listNhaCungCap.Rows[rowId];
 
-            textBox1.Text = row.Cells[0].Value.ToString();
+            txtMaNCC.Text = row.Cells[0].Value.ToString();
 
-            textBox2.Text = row.Cells[1].Value.ToString();
+            txtTenNCC.Text = row.Cells[1].Value.ToString();
 
-            textBox3.Text = row.Cells[2].Value.ToString();
+            txtSDTNCC.Text = row.Cells[2].Value.ToString();
 
-            textBox4.Text = row.Cells[3].Value.ToString();
+            txtEmail.Text = row.Cells[3].Value.ToString();
 
         }
 
@@ -118,10 +118,10 @@ namespace app
 
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.Char, 10) { Value = textBox1.Text.Trim() },
-                    new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = textBox2.Text.Trim() },
-                    new SqlParameter("@sdt", SqlDbType.VarChar, 20) { Value = textBox3.Text.Trim() },
-                    new SqlParameter("@email", SqlDbType.VarChar, 255) { Value = textBox4.Text.Trim() }
+                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.Char, 10) { Value = txtMaNCC.Text.Trim() },
+                    new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = txtTenNCC.Text.Trim() },
+                    new SqlParameter("@sdt", SqlDbType.VarChar, 20) { Value = txtSDTNCC.Text.Trim() },
+                    new SqlParameter("@email", SqlDbType.VarChar, 255) { Value = txtEmail.Text.Trim() }
                 };
 
 
@@ -158,10 +158,10 @@ namespace app
 
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.Char, 10) { Value = textBox1.Text.Trim() },
-                    new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = textBox2.Text.Trim() },
-                    new SqlParameter("@sdt", SqlDbType.VarChar, 20) { Value = textBox3.Text.Trim() },
-                    new SqlParameter("@email", SqlDbType.VarChar, 255) { Value = textBox4.Text.Trim() }
+                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.Char, 10) { Value = txtMaNCC.Text.Trim() },
+                    new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = txtTenNCC.Text.Trim() },
+                    new SqlParameter("@sdt", SqlDbType.VarChar, 20) { Value = txtSDTNCC.Text.Trim() },
+                    new SqlParameter("@email", SqlDbType.VarChar, 255) { Value = txtEmail.Text.Trim() }
                 };
 
                 int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
@@ -197,7 +197,7 @@ namespace app
                 
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.Char, 10) { Value = textBox1.Text.Trim() }
+                    new SqlParameter("@ma_nha_cung_cap", SqlDbType.Char, 10) { Value = txtMaNCC.Text.Trim() }
                 };
 
 

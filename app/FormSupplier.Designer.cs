@@ -33,10 +33,10 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            txtMaNCC = new TextBox();
+            txtTenNCC = new TextBox();
+            txtSDTNCC = new TextBox();
+            txtEmail = new TextBox();
             panel7 = new Panel();
             btnLamMoi = new FontAwesome.Sharp.IconButton();
             btnXoa = new FontAwesome.Sharp.IconButton();
@@ -45,7 +45,7 @@
             panel5 = new Panel();
             panel1 = new Panel();
             iconButton1 = new FontAwesome.Sharp.IconButton();
-            textBox5 = new TextBox();
+            txtTimKiem = new TextBox();
             label2 = new Label();
             label1 = new Label();
             panel6 = new Panel();
@@ -112,33 +112,33 @@
             label8.TabIndex = 4;
             label8.Text = "Email";
             // 
-            // textBox1
+            // txtMaNCC
             // 
-            textBox1.Location = new Point(94, 112);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(90, 27);
-            textBox1.TabIndex = 5;
+            txtMaNCC.Location = new Point(94, 112);
+            txtMaNCC.Name = "txtMaNCC";
+            txtMaNCC.Size = new Size(90, 27);
+            txtMaNCC.TabIndex = 5;
             // 
-            // textBox2
+            // txtTenNCC
             // 
-            textBox2.Location = new Point(249, 113);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(91, 27);
-            textBox2.TabIndex = 6;
+            txtTenNCC.Location = new Point(249, 113);
+            txtTenNCC.Name = "txtTenNCC";
+            txtTenNCC.Size = new Size(91, 27);
+            txtTenNCC.TabIndex = 6;
             // 
-            // textBox3
+            // txtSDTNCC
             // 
-            textBox3.Location = new Point(379, 113);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(109, 27);
-            textBox3.TabIndex = 7;
+            txtSDTNCC.Location = new Point(379, 113);
+            txtSDTNCC.Name = "txtSDTNCC";
+            txtSDTNCC.Size = new Size(109, 27);
+            txtSDTNCC.TabIndex = 7;
             // 
-            // textBox4
+            // txtEmail
             // 
-            textBox4.Location = new Point(528, 113);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(152, 27);
-            textBox4.TabIndex = 8;
+            txtEmail.Location = new Point(528, 113);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(152, 27);
+            txtEmail.TabIndex = 8;
             // 
             // panel7
             // 
@@ -249,10 +249,10 @@
             panel5.Controls.Add(label2);
             panel5.Controls.Add(label1);
             panel5.Controls.Add(panel7);
-            panel5.Controls.Add(textBox4);
-            panel5.Controls.Add(textBox3);
-            panel5.Controls.Add(textBox2);
-            panel5.Controls.Add(textBox1);
+            panel5.Controls.Add(txtEmail);
+            panel5.Controls.Add(txtSDTNCC);
+            panel5.Controls.Add(txtTenNCC);
+            panel5.Controls.Add(txtMaNCC);
             panel5.Controls.Add(label8);
             panel5.Controls.Add(label7);
             panel5.Controls.Add(label6);
@@ -266,7 +266,7 @@
             // panel1
             // 
             panel1.Controls.Add(iconButton1);
-            panel1.Controls.Add(textBox5);
+            panel1.Controls.Add(txtTimKiem);
             panel1.Location = new Point(96, 190);
             panel1.Name = "panel1";
             panel1.Size = new Size(394, 27);
@@ -291,12 +291,12 @@
             iconButton1.TabIndex = 13;
             iconButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtTimKiem
             // 
-            textBox5.Location = new Point(-3, 0);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(394, 27);
-            textBox5.TabIndex = 11;
+            txtTimKiem.Location = new Point(-3, 0);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(394, 27);
+            txtTimKiem.TabIndex = 11;
             // 
             // label2
             // 
@@ -366,16 +366,16 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtMaNCC;
+        private TextBox txtTenNCC;
+        private TextBox txtSDTNCC;
+        private TextBox txtEmail;
         private Panel panel7;
         private Panel panel5;
         private Panel panel6;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Label label2;
-        private TextBox textBox5;
+        private TextBox txtTimKiem;
         private Label label1;
         private Panel panel1;
         private FontAwesome.Sharp.IconButton btnLamMoi;

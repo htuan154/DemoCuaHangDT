@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             panelMenu = new Panel();
-            btnExit = new FontAwesome.Sharp.IconButton();
             btnStatistical = new FontAwesome.Sharp.IconButton();
+            btnCustomer = new FontAwesome.Sharp.IconButton();
+            btnExit = new FontAwesome.Sharp.IconButton();
             btnStaff = new FontAwesome.Sharp.IconButton();
             btnWarehouse = new FontAwesome.Sharp.IconButton();
             btnNewBill = new FontAwesome.Sharp.IconButton();
@@ -60,8 +61,9 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.FromArgb(31, 30, 68);
-            panelMenu.Controls.Add(btnExit);
             panelMenu.Controls.Add(btnStatistical);
+            panelMenu.Controls.Add(btnCustomer);
+            panelMenu.Controls.Add(btnExit);
             panelMenu.Controls.Add(btnStaff);
             panelMenu.Controls.Add(btnWarehouse);
             panelMenu.Controls.Add(btnNewBill);
@@ -74,6 +76,52 @@
             panelMenu.Name = "panelMenu";
             panelMenu.Size = new Size(220, 703);
             panelMenu.TabIndex = 0;
+            // 
+            // btnStatistical
+            // 
+            btnStatistical.Dock = DockStyle.Top;
+            btnStatistical.FlatAppearance.BorderSize = 0;
+            btnStatistical.FlatStyle = FlatStyle.Flat;
+            btnStatistical.Font = new Font("Times New Roman", 12F);
+            btnStatistical.ForeColor = Color.Gainsboro;
+            btnStatistical.IconChar = FontAwesome.Sharp.IconChar.SquarePollHorizontal;
+            btnStatistical.IconColor = Color.Gainsboro;
+            btnStatistical.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnStatistical.IconSize = 32;
+            btnStatistical.ImageAlign = ContentAlignment.MiddleLeft;
+            btnStatistical.Location = new Point(0, 560);
+            btnStatistical.Name = "btnStatistical";
+            btnStatistical.Padding = new Padding(10, 0, 20, 0);
+            btnStatistical.Size = new Size(220, 60);
+            btnStatistical.TabIndex = 11;
+            btnStatistical.Text = "Thống kê";
+            btnStatistical.TextAlign = ContentAlignment.MiddleLeft;
+            btnStatistical.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnStatistical.UseVisualStyleBackColor = true;
+            btnStatistical.Click += btnStatistical_Click_2;
+            // 
+            // btnCustomer
+            // 
+            btnCustomer.Dock = DockStyle.Top;
+            btnCustomer.FlatAppearance.BorderSize = 0;
+            btnCustomer.FlatStyle = FlatStyle.Flat;
+            btnCustomer.Font = new Font("Times New Roman", 12F);
+            btnCustomer.ForeColor = Color.Gainsboro;
+            btnCustomer.IconChar = FontAwesome.Sharp.IconChar.ListDots;
+            btnCustomer.IconColor = Color.Gainsboro;
+            btnCustomer.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnCustomer.IconSize = 32;
+            btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.Location = new Point(0, 500);
+            btnCustomer.Name = "btnCustomer";
+            btnCustomer.Padding = new Padding(10, 0, 20, 0);
+            btnCustomer.Size = new Size(220, 60);
+            btnCustomer.TabIndex = 10;
+            btnCustomer.Text = "Khách Hàng";
+            btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += btnCustomer_Click;
             // 
             // btnExit
             // 
@@ -97,29 +145,6 @@
             btnExit.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click_1;
-            // 
-            // btnStatistical
-            // 
-            btnStatistical.Dock = DockStyle.Top;
-            btnStatistical.FlatAppearance.BorderSize = 0;
-            btnStatistical.FlatStyle = FlatStyle.Flat;
-            btnStatistical.Font = new Font("Times New Roman", 12F);
-            btnStatistical.ForeColor = Color.Gainsboro;
-            btnStatistical.IconChar = FontAwesome.Sharp.IconChar.SquarePollHorizontal;
-            btnStatistical.IconColor = Color.Gainsboro;
-            btnStatistical.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnStatistical.IconSize = 32;
-            btnStatistical.ImageAlign = ContentAlignment.MiddleLeft;
-            btnStatistical.Location = new Point(0, 500);
-            btnStatistical.Name = "btnStatistical";
-            btnStatistical.Padding = new Padding(10, 0, 20, 0);
-            btnStatistical.Size = new Size(220, 60);
-            btnStatistical.TabIndex = 8;
-            btnStatistical.Text = "Thống kê";
-            btnStatistical.TextAlign = ContentAlignment.MiddleLeft;
-            btnStatistical.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnStatistical.UseVisualStyleBackColor = true;
-            btnStatistical.Click += btnStatistical_Click_1;
             // 
             // btnStaff
             // 
@@ -391,7 +416,6 @@
         private Panel panelMenu;
         private Panel panelLogo;
         private FontAwesome.Sharp.IconButton btnHome;
-        private FontAwesome.Sharp.IconButton btnStatistical;
         private FontAwesome.Sharp.IconButton btnStaff;
         private FontAwesome.Sharp.IconButton btnWarehouse;
         private FontAwesome.Sharp.IconButton btnNewBill;
@@ -407,5 +431,7 @@
         private Panel panel1;
         private Label label1;
         private PictureBox pictureBox2;
+        private FontAwesome.Sharp.IconButton btnStatistical;
+        private FontAwesome.Sharp.IconButton btnCustomer;
     }
 }

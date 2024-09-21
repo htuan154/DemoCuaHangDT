@@ -31,34 +31,35 @@
             panel6 = new Panel();
             list = new DataGridView();
             panel3 = new Panel();
-            iconButton4 = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            btnXoa = new FontAwesome.Sharp.IconButton();
+            btnTaoCTHD = new FontAwesome.Sharp.IconButton();
+            btnReset = new FontAwesome.Sharp.IconButton();
             panel5 = new Panel();
             panel2 = new Panel();
-            comboBox1 = new ComboBox();
+            cbNV = new ComboBox();
             dateTimePicker1 = new DateTimePicker();
-            textBox5 = new TextBox();
-            textBox3 = new TextBox();
-            textBox8 = new TextBox();
+            txtSDT = new TextBox();
+            txtDiaChi = new TextBox();
             label10 = new Label();
             label11 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtmahd = new TextBox();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             panel1 = new Panel();
+            cbChonSp = new ComboBox();
             label9 = new Label();
-            textBox2 = new TextBox();
+            txtSL = new TextBox();
             label2 = new Label();
             label3 = new Label();
             panel7 = new Panel();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            btnHome = new FontAwesome.Sharp.IconButton();
-            comboBox2 = new ComboBox();
+            btnThemSpVaoHD = new FontAwesome.Sharp.IconButton();
+            panel4 = new Panel();
+            iconButton6 = new FontAwesome.Sharp.IconButton();
+            cbKH = new ComboBox();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)list).BeginInit();
             panel3.SuspendLayout();
@@ -66,6 +67,7 @@
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
+            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel6
@@ -89,79 +91,79 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(iconButton4);
-            panel3.Controls.Add(iconButton1);
-            panel3.Controls.Add(iconButton2);
+            panel3.Controls.Add(btnXoa);
+            panel3.Controls.Add(btnTaoCTHD);
+            panel3.Controls.Add(btnReset);
             panel3.Location = new Point(325, 236);
             panel3.Name = "panel3";
             panel3.Size = new Size(383, 45);
             panel3.TabIndex = 10;
             // 
-            // iconButton4
+            // btnXoa
             // 
-            iconButton4.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton4.Dock = DockStyle.Right;
-            iconButton4.FlatAppearance.BorderSize = 0;
-            iconButton4.Font = new Font("Times New Roman", 12F);
-            iconButton4.ForeColor = Color.Gainsboro;
-            iconButton4.IconChar = FontAwesome.Sharp.IconChar.SquareXmark;
-            iconButton4.IconColor = Color.Gainsboro;
-            iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton4.IconSize = 32;
-            iconButton4.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton4.Location = new Point(127, 0);
-            iconButton4.Name = "iconButton4";
-            iconButton4.Padding = new Padding(10, 0, 20, 0);
-            iconButton4.Size = new Size(128, 45);
-            iconButton4.TabIndex = 6;
-            iconButton4.Text = "Hủy";
-            iconButton4.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton4.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton4.UseVisualStyleBackColor = false;
+            btnXoa.BackColor = Color.FromArgb(34, 34, 74);
+            btnXoa.Dock = DockStyle.Right;
+            btnXoa.FlatAppearance.BorderSize = 0;
+            btnXoa.Font = new Font("Times New Roman", 12F);
+            btnXoa.ForeColor = Color.Gainsboro;
+            btnXoa.IconChar = FontAwesome.Sharp.IconChar.SquareXmark;
+            btnXoa.IconColor = Color.Gainsboro;
+            btnXoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnXoa.IconSize = 32;
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(127, 0);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Padding = new Padding(10, 0, 20, 0);
+            btnXoa.Size = new Size(128, 45);
+            btnXoa.TabIndex = 6;
+            btnXoa.Text = "Xóa";
+            btnXoa.TextAlign = ContentAlignment.MiddleLeft;
+            btnXoa.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnXoa.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
+            // btnTaoCTHD
             // 
-            iconButton1.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton1.Dock = DockStyle.Right;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.Font = new Font("Times New Roman", 12F);
-            iconButton1.ForeColor = Color.Gainsboro;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
-            iconButton1.IconColor = Color.Gainsboro;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 32;
-            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(255, 0);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Padding = new Padding(10, 0, 20, 0);
-            iconButton1.Size = new Size(128, 45);
-            iconButton1.TabIndex = 5;
-            iconButton1.Text = "Tạo";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnTaoCTHD.BackColor = Color.FromArgb(34, 34, 74);
+            btnTaoCTHD.Dock = DockStyle.Right;
+            btnTaoCTHD.FlatAppearance.BorderSize = 0;
+            btnTaoCTHD.Font = new Font("Times New Roman", 12F);
+            btnTaoCTHD.ForeColor = Color.Gainsboro;
+            btnTaoCTHD.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
+            btnTaoCTHD.IconColor = Color.Gainsboro;
+            btnTaoCTHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnTaoCTHD.IconSize = 32;
+            btnTaoCTHD.ImageAlign = ContentAlignment.MiddleLeft;
+            btnTaoCTHD.Location = new Point(255, 0);
+            btnTaoCTHD.Name = "btnTaoCTHD";
+            btnTaoCTHD.Padding = new Padding(10, 0, 20, 0);
+            btnTaoCTHD.Size = new Size(128, 45);
+            btnTaoCTHD.TabIndex = 5;
+            btnTaoCTHD.Text = "Tạo";
+            btnTaoCTHD.TextAlign = ContentAlignment.MiddleLeft;
+            btnTaoCTHD.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnTaoCTHD.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btnReset
             // 
-            iconButton2.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton2.Dock = DockStyle.Left;
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.Font = new Font("Times New Roman", 12F);
-            iconButton2.ForeColor = Color.Gainsboro;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Refresh;
-            iconButton2.IconColor = Color.Gainsboro;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 32;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 0);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(10, 0, 20, 0);
-            iconButton2.Size = new Size(128, 45);
-            iconButton2.TabIndex = 3;
-            iconButton2.Text = "Reset";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
+            btnReset.BackColor = Color.FromArgb(34, 34, 74);
+            btnReset.Dock = DockStyle.Left;
+            btnReset.FlatAppearance.BorderSize = 0;
+            btnReset.Font = new Font("Times New Roman", 12F);
+            btnReset.ForeColor = Color.Gainsboro;
+            btnReset.IconChar = FontAwesome.Sharp.IconChar.Refresh;
+            btnReset.IconColor = Color.Gainsboro;
+            btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnReset.IconSize = 32;
+            btnReset.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReset.Location = new Point(0, 0);
+            btnReset.Name = "btnReset";
+            btnReset.Padding = new Padding(10, 0, 20, 0);
+            btnReset.Size = new Size(128, 45);
+            btnReset.TabIndex = 3;
+            btnReset.Text = "Reset";
+            btnReset.TextAlign = ContentAlignment.MiddleLeft;
+            btnReset.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReset.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -175,15 +177,16 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(comboBox1);
+            panel2.Controls.Add(cbKH);
+            panel2.Controls.Add(panel4);
+            panel2.Controls.Add(cbNV);
             panel2.Controls.Add(dateTimePicker1);
-            panel2.Controls.Add(textBox5);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox8);
+            panel2.Controls.Add(txtSDT);
+            panel2.Controls.Add(txtDiaChi);
             panel2.Controls.Add(label10);
             panel2.Controls.Add(label11);
             panel2.Controls.Add(label1);
-            panel2.Controls.Add(textBox1);
+            panel2.Controls.Add(txtmahd);
             panel2.Controls.Add(label8);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(label6);
@@ -194,13 +197,13 @@
             panel2.Size = new Size(538, 309);
             panel2.TabIndex = 26;
             // 
-            // comboBox1
+            // cbNV
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(349, 168);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(120, 25);
-            comboBox1.TabIndex = 27;
+            cbNV.FormattingEnabled = true;
+            cbNV.Location = new Point(349, 168);
+            cbNV.Name = "cbNV";
+            cbNV.Size = new Size(120, 25);
+            cbNV.TabIndex = 27;
             // 
             // dateTimePicker1
             // 
@@ -209,26 +212,19 @@
             dateTimePicker1.Size = new Size(276, 25);
             dateTimePicker1.TabIndex = 26;
             // 
-            // textBox5
+            // txtSDT
             // 
-            textBox5.Location = new Point(349, 91);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(120, 25);
-            textBox5.TabIndex = 25;
+            txtSDT.Location = new Point(349, 91);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(120, 25);
+            txtSDT.TabIndex = 25;
             // 
-            // textBox3
+            // txtDiaChi
             // 
-            textBox3.Location = new Point(176, 91);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(120, 25);
-            textBox3.TabIndex = 24;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(20, 168);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(276, 25);
-            textBox8.TabIndex = 18;
+            txtDiaChi.Location = new Point(20, 168);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(276, 25);
+            txtDiaChi.TabIndex = 18;
             // 
             // label10
             // 
@@ -263,12 +259,12 @@
             label1.TabIndex = 10;
             label1.Text = "Danh Sách Hóa Đơn";
             // 
-            // textBox1
+            // txtmahd
             // 
-            textBox1.Location = new Point(21, 91);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(120, 25);
-            textBox1.TabIndex = 5;
+            txtmahd.Location = new Point(21, 91);
+            txtmahd.Name = "txtmahd";
+            txtmahd.Size = new Size(120, 25);
+            txtmahd.TabIndex = 5;
             // 
             // label8
             // 
@@ -327,9 +323,9 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(comboBox2);
+            panel1.Controls.Add(cbChonSp);
             panel1.Controls.Add(label9);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(txtSL);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(panel7);
@@ -337,6 +333,15 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(454, 304);
             panel1.TabIndex = 25;
+            panel1.Paint += panel1_Paint;
+            // 
+            // cbChonSp
+            // 
+            cbChonSp.FormattingEnabled = true;
+            cbChonSp.Location = new Point(62, 89);
+            cbChonSp.Name = "cbChonSp";
+            cbChonSp.Size = new Size(320, 25);
+            cbChonSp.TabIndex = 28;
             // 
             // label9
             // 
@@ -349,12 +354,12 @@
             label9.TabIndex = 27;
             label9.Text = "Chọn Sản Phẩm";
             // 
-            // textBox2
+            // txtSL
             // 
-            textBox2.Location = new Point(62, 167);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(136, 25);
-            textBox2.TabIndex = 26;
+            txtSL.Location = new Point(62, 167);
+            txtSL.Name = "txtSL";
+            txtSL.Size = new Size(136, 25);
+            txtSL.TabIndex = 26;
             // 
             // label2
             // 
@@ -380,65 +385,72 @@
             // 
             // panel7
             // 
-            panel7.Controls.Add(iconButton3);
-            panel7.Controls.Add(btnHome);
-            panel7.Location = new Point(62, 233);
+            panel7.Controls.Add(btnThemSpVaoHD);
+            panel7.Location = new Point(251, 233);
             panel7.Name = "panel7";
-            panel7.Size = new Size(320, 45);
+            panel7.Size = new Size(131, 45);
             panel7.TabIndex = 9;
             panel7.Paint += panel7_Paint;
             // 
-            // iconButton3
+            // btnThemSpVaoHD
             // 
-            iconButton3.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton3.Dock = DockStyle.Right;
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.Font = new Font("Times New Roman", 12F);
-            iconButton3.ForeColor = Color.Gainsboro;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.DeleteLeft;
-            iconButton3.IconColor = Color.Gainsboro;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 32;
-            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(193, 0);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Padding = new Padding(10, 0, 20, 0);
-            iconButton3.Size = new Size(127, 45);
-            iconButton3.TabIndex = 5;
-            iconButton3.Text = "Xóa";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
+            btnThemSpVaoHD.BackColor = Color.FromArgb(34, 34, 74);
+            btnThemSpVaoHD.Dock = DockStyle.Left;
+            btnThemSpVaoHD.FlatAppearance.BorderSize = 0;
+            btnThemSpVaoHD.Font = new Font("Times New Roman", 12F);
+            btnThemSpVaoHD.ForeColor = Color.Gainsboro;
+            btnThemSpVaoHD.IconChar = FontAwesome.Sharp.IconChar.Add;
+            btnThemSpVaoHD.IconColor = Color.Gainsboro;
+            btnThemSpVaoHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnThemSpVaoHD.IconSize = 32;
+            btnThemSpVaoHD.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThemSpVaoHD.Location = new Point(0, 0);
+            btnThemSpVaoHD.Name = "btnThemSpVaoHD";
+            btnThemSpVaoHD.Padding = new Padding(10, 0, 20, 0);
+            btnThemSpVaoHD.Size = new Size(130, 45);
+            btnThemSpVaoHD.TabIndex = 3;
+            btnThemSpVaoHD.Text = "Thêm";
+            btnThemSpVaoHD.TextAlign = ContentAlignment.MiddleLeft;
+            btnThemSpVaoHD.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnThemSpVaoHD.UseVisualStyleBackColor = false;
             // 
-            // btnHome
+            // panel4
             // 
-            btnHome.BackColor = Color.FromArgb(34, 34, 74);
-            btnHome.Dock = DockStyle.Left;
-            btnHome.FlatAppearance.BorderSize = 0;
-            btnHome.Font = new Font("Times New Roman", 12F);
-            btnHome.ForeColor = Color.Gainsboro;
-            btnHome.IconChar = FontAwesome.Sharp.IconChar.Add;
-            btnHome.IconColor = Color.Gainsboro;
-            btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnHome.IconSize = 32;
-            btnHome.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHome.Location = new Point(0, 0);
-            btnHome.Name = "btnHome";
-            btnHome.Padding = new Padding(10, 0, 20, 0);
-            btnHome.Size = new Size(130, 45);
-            btnHome.TabIndex = 3;
-            btnHome.Text = "Thêm";
-            btnHome.TextAlign = ContentAlignment.MiddleLeft;
-            btnHome.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnHome.UseVisualStyleBackColor = false;
+            panel4.Controls.Add(iconButton6);
+            panel4.Location = new Point(349, 235);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(140, 45);
+            panel4.TabIndex = 28;
             // 
-            // comboBox2
+            // iconButton6
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(62, 89);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(320, 25);
-            comboBox2.TabIndex = 28;
+            iconButton6.BackColor = Color.FromArgb(34, 34, 74);
+            iconButton6.Dock = DockStyle.Left;
+            iconButton6.FlatAppearance.BorderSize = 0;
+            iconButton6.Font = new Font("Times New Roman", 12F);
+            iconButton6.ForeColor = Color.Gainsboro;
+            iconButton6.IconChar = FontAwesome.Sharp.IconChar.Add;
+            iconButton6.IconColor = Color.Gainsboro;
+            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton6.IconSize = 32;
+            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
+            iconButton6.Location = new Point(0, 0);
+            iconButton6.Name = "iconButton6";
+            iconButton6.Padding = new Padding(10, 0, 20, 0);
+            iconButton6.Size = new Size(130, 45);
+            iconButton6.TabIndex = 3;
+            iconButton6.Text = "Thêm";
+            iconButton6.TextAlign = ContentAlignment.MiddleLeft;
+            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
+            iconButton6.UseVisualStyleBackColor = false;
+            // 
+            // cbKH
+            // 
+            cbKH.FormattingEnabled = true;
+            cbKH.Location = new Point(176, 91);
+            cbKH.Name = "cbKH";
+            cbKH.Size = new Size(120, 25);
+            cbKH.TabIndex = 28;
             // 
             // FormNewBill
             // 
@@ -459,6 +471,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel7.ResumeLayout(false);
+            panel4.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -466,14 +479,13 @@
 
         private Panel panel6;
         private Panel panel5;
-        private TextBox textBox8;
+        private TextBox txtDiaChi;
         private Label label10;
         private Label label11;
         private Label label1;
         private Panel panel7;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton btnHome;
-        private TextBox textBox1;
+        private FontAwesome.Sharp.IconButton btnThemSpVaoHD;
+        private TextBox txtmahd;
         private Label label8;
         private Label label7;
         private Label label6;
@@ -481,19 +493,21 @@
         private Label label4;
         private Panel panel2;
         private Panel panel1;
-        private TextBox textBox2;
+        private TextBox txtSL;
         private Label label2;
         private Label label3;
         private Panel panel3;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnXoa;
+        private FontAwesome.Sharp.IconButton btnTaoCTHD;
+        private FontAwesome.Sharp.IconButton btnReset;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox5;
-        private TextBox textBox3;
+        private TextBox txtSDT;
         private Label label9;
         private DataGridView list;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cbNV;
+        private ComboBox cbChonSp;
+        private Panel panel4;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private ComboBox cbKH;
     }
 }

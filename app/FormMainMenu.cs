@@ -148,6 +148,12 @@ namespace app
             }
             Reset();
         }
+        //btn Customer
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormCustomer());
+        }
         //btnHome
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -211,6 +217,10 @@ namespace app
         }
         private void btnStatistical_Click_1(object sender, EventArgs e)
         {
+           
+        }
+        private void btnStatistical_Click_2(object sender, EventArgs e)
+        {
             ActivateButton(sender, RGBColors.color7);
             OpenChildForm(new FormStatistical());
         }
@@ -224,6 +234,8 @@ namespace app
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+
         //Close-Maximize-Minimize
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -266,5 +278,7 @@ namespace app
         {
 
         }
+
+        
     }
 }

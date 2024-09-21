@@ -30,13 +30,13 @@
         {
             label4 = new Label();
             panel3 = new Panel();
-            iconButton3 = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
-            iconButton2 = new FontAwesome.Sharp.IconButton();
+            btnXemCTHD = new FontAwesome.Sharp.IconButton();
+            btnXuatExcel = new FontAwesome.Sharp.IconButton();
+            btnReset = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
             panel2 = new Panel();
             iconButton4 = new FontAwesome.Sharp.IconButton();
-            textBox5 = new TextBox();
+            txtTimKiem = new TextBox();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -60,79 +60,79 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(iconButton3);
-            panel3.Controls.Add(iconButton1);
-            panel3.Controls.Add(iconButton2);
-            panel3.Location = new Point(595, 434);
+            panel3.Controls.Add(btnXemCTHD);
+            panel3.Controls.Add(btnXuatExcel);
+            panel3.Controls.Add(btnReset);
+            panel3.Location = new Point(564, 434);
             panel3.Name = "panel3";
-            panel3.Size = new Size(382, 47);
+            panel3.Size = new Size(452, 47);
             panel3.TabIndex = 15;
             // 
-            // iconButton3
+            // btnXemCTHD
             // 
-            iconButton3.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton3.Dock = DockStyle.Right;
-            iconButton3.FlatAppearance.BorderSize = 0;
-            iconButton3.Font = new Font("Times New Roman", 12F);
-            iconButton3.ForeColor = Color.Gainsboro;
-            iconButton3.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
-            iconButton3.IconColor = Color.Gainsboro;
-            iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton3.IconSize = 32;
-            iconButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton3.Location = new Point(126, 0);
-            iconButton3.Name = "iconButton3";
-            iconButton3.Padding = new Padding(10, 0, 20, 0);
-            iconButton3.Size = new Size(128, 47);
-            iconButton3.TabIndex = 7;
-            iconButton3.Text = "Xem";
-            iconButton3.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton3.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton3.UseVisualStyleBackColor = false;
+            btnXemCTHD.BackColor = Color.FromArgb(34, 34, 74);
+            btnXemCTHD.Dock = DockStyle.Right;
+            btnXemCTHD.FlatAppearance.BorderSize = 0;
+            btnXemCTHD.Font = new Font("Times New Roman", 12F);
+            btnXemCTHD.ForeColor = Color.Gainsboro;
+            btnXemCTHD.IconChar = FontAwesome.Sharp.IconChar.Newspaper;
+            btnXemCTHD.IconColor = Color.Gainsboro;
+            btnXemCTHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnXemCTHD.IconSize = 32;
+            btnXemCTHD.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXemCTHD.Location = new Point(204, 0);
+            btnXemCTHD.Name = "btnXemCTHD";
+            btnXemCTHD.Padding = new Padding(10, 0, 20, 0);
+            btnXemCTHD.Size = new Size(119, 47);
+            btnXemCTHD.TabIndex = 7;
+            btnXemCTHD.Text = "Xem";
+            btnXemCTHD.TextAlign = ContentAlignment.MiddleLeft;
+            btnXemCTHD.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnXemCTHD.UseVisualStyleBackColor = false;
             // 
-            // iconButton1
+            // btnXuatExcel
             // 
-            iconButton1.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton1.Dock = DockStyle.Right;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.Font = new Font("Times New Roman", 12F);
-            iconButton1.ForeColor = Color.Gainsboro;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Database;
-            iconButton1.IconColor = Color.Gainsboro;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 32;
-            iconButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton1.Location = new Point(254, 0);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Padding = new Padding(10, 0, 20, 0);
-            iconButton1.Size = new Size(128, 47);
-            iconButton1.TabIndex = 5;
-            iconButton1.Text = "Excel";
-            iconButton1.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
+            btnXuatExcel.BackColor = Color.FromArgb(34, 34, 74);
+            btnXuatExcel.Dock = DockStyle.Right;
+            btnXuatExcel.FlatAppearance.BorderSize = 0;
+            btnXuatExcel.Font = new Font("Times New Roman", 12F);
+            btnXuatExcel.ForeColor = Color.Gainsboro;
+            btnXuatExcel.IconChar = FontAwesome.Sharp.IconChar.Database;
+            btnXuatExcel.IconColor = Color.Gainsboro;
+            btnXuatExcel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnXuatExcel.IconSize = 32;
+            btnXuatExcel.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXuatExcel.Location = new Point(323, 0);
+            btnXuatExcel.Name = "btnXuatExcel";
+            btnXuatExcel.Padding = new Padding(10, 0, 20, 0);
+            btnXuatExcel.Size = new Size(129, 47);
+            btnXuatExcel.TabIndex = 5;
+            btnXuatExcel.Text = "Excel";
+            btnXuatExcel.TextAlign = ContentAlignment.MiddleLeft;
+            btnXuatExcel.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnXuatExcel.UseVisualStyleBackColor = false;
             // 
-            // iconButton2
+            // btnReset
             // 
-            iconButton2.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton2.Dock = DockStyle.Left;
-            iconButton2.FlatAppearance.BorderSize = 0;
-            iconButton2.Font = new Font("Times New Roman", 12F);
-            iconButton2.ForeColor = Color.Gainsboro;
-            iconButton2.IconChar = FontAwesome.Sharp.IconChar.Refresh;
-            iconButton2.IconColor = Color.Gainsboro;
-            iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton2.IconSize = 32;
-            iconButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton2.Location = new Point(0, 0);
-            iconButton2.Name = "iconButton2";
-            iconButton2.Padding = new Padding(10, 0, 20, 0);
-            iconButton2.Size = new Size(127, 47);
-            iconButton2.TabIndex = 3;
-            iconButton2.Text = "Reset";
-            iconButton2.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton2.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton2.UseVisualStyleBackColor = false;
+            btnReset.BackColor = Color.FromArgb(34, 34, 74);
+            btnReset.Dock = DockStyle.Left;
+            btnReset.FlatAppearance.BorderSize = 0;
+            btnReset.Font = new Font("Times New Roman", 12F);
+            btnReset.ForeColor = Color.Gainsboro;
+            btnReset.IconChar = FontAwesome.Sharp.IconChar.Refresh;
+            btnReset.IconColor = Color.Gainsboro;
+            btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnReset.IconSize = 32;
+            btnReset.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReset.Location = new Point(0, 0);
+            btnReset.Name = "btnReset";
+            btnReset.Padding = new Padding(10, 0, 20, 0);
+            btnReset.Size = new Size(153, 47);
+            btnReset.TabIndex = 3;
+            btnReset.Text = "Làm mới";
+            btnReset.TextAlign = ContentAlignment.MiddleLeft;
+            btnReset.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReset.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -147,7 +147,7 @@
             // panel2
             // 
             panel2.Controls.Add(iconButton4);
-            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(txtTimKiem);
             panel2.Location = new Point(3, 33);
             panel2.Name = "panel2";
             panel2.Size = new Size(488, 27);
@@ -172,12 +172,12 @@
             iconButton4.TabIndex = 13;
             iconButton4.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtTimKiem
             // 
-            textBox5.Location = new Point(-3, 0);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(449, 27);
-            textBox5.TabIndex = 11;
+            txtTimKiem.Location = new Point(-3, 0);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(449, 27);
+            txtTimKiem.TabIndex = 11;
             // 
             // label3
             // 
@@ -248,13 +248,13 @@
 
         private Label label4;
         private Panel panel3;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton btnXemCTHD;
+        private FontAwesome.Sharp.IconButton btnXuatExcel;
+        private FontAwesome.Sharp.IconButton btnReset;
         private Panel panel1;
         private Panel panel2;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private TextBox textBox5;
+        private TextBox txtTimKiem;
         private Label label3;
         private Label label2;
         private Label label1;

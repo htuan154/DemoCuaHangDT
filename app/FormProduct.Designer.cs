@@ -35,8 +35,8 @@
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            textBox1 = new TextBox();
-            textBox4 = new TextBox();
+            txtMaSP = new TextBox();
+            txtGia = new TextBox();
             panel7 = new Panel();
             btnLamMoi = new FontAwesome.Sharp.IconButton();
             btnXoa = new FontAwesome.Sharp.IconButton();
@@ -47,16 +47,16 @@
             label3 = new Label();
             panel1 = new Panel();
             iconButton1 = new FontAwesome.Sharp.IconButton();
-            textBox5 = new TextBox();
+            txtTimKiem = new TextBox();
             label11 = new Label();
             label10 = new Label();
             label9 = new Label();
-            textBox8 = new TextBox();
+            txtNCC = new TextBox();
             panel5 = new Panel();
-            comboBox4 = new ComboBox();
-            comboBox3 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            cbXuatXu = new ComboBox();
+            cbLoai = new ComboBox();
+            cbHang = new ComboBox();
+            cbTenSP = new ComboBox();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)list).BeginInit();
             panel7.SuspendLayout();
@@ -138,19 +138,19 @@
             label8.TabIndex = 4;
             label8.Text = "Giá Bán";
             // 
-            // textBox1
+            // txtMaSP
             // 
-            textBox1.Location = new Point(94, 96);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(120, 25);
-            textBox1.TabIndex = 5;
+            txtMaSP.Location = new Point(94, 96);
+            txtMaSP.Name = "txtMaSP";
+            txtMaSP.Size = new Size(120, 25);
+            txtMaSP.TabIndex = 5;
             // 
-            // textBox4
+            // txtGia
             // 
-            textBox4.Location = new Point(578, 96);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(107, 25);
-            textBox4.TabIndex = 8;
+            txtGia.Location = new Point(578, 96);
+            txtGia.Name = "txtGia";
+            txtGia.Size = new Size(107, 25);
+            txtGia.TabIndex = 8;
             // 
             // panel7
             // 
@@ -291,7 +291,7 @@
             // panel1
             // 
             panel1.Controls.Add(iconButton1);
-            panel1.Controls.Add(textBox5);
+            panel1.Controls.Add(txtTimKiem);
             panel1.Location = new Point(96, 242);
             panel1.Name = "panel1";
             panel1.Size = new Size(488, 27);
@@ -316,12 +316,12 @@
             iconButton1.TabIndex = 13;
             iconButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtTimKiem
             // 
-            textBox5.Location = new Point(-3, 0);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(449, 25);
-            textBox5.TabIndex = 11;
+            txtTimKiem.Location = new Point(-3, 0);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(449, 25);
+            txtTimKiem.TabIndex = 11;
             // 
             // label11
             // 
@@ -356,20 +356,20 @@
             label9.TabIndex = 17;
             label9.Text = "Xuất Xứ";
             // 
-            // textBox8
+            // txtNCC
             // 
-            textBox8.Location = new Point(93, 173);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(120, 25);
-            textBox8.TabIndex = 18;
+            txtNCC.Location = new Point(93, 173);
+            txtNCC.Name = "txtNCC";
+            txtNCC.Size = new Size(120, 25);
+            txtNCC.TabIndex = 18;
             // 
             // panel5
             // 
-            panel5.Controls.Add(comboBox4);
-            panel5.Controls.Add(comboBox3);
-            panel5.Controls.Add(comboBox2);
-            panel5.Controls.Add(comboBox1);
-            panel5.Controls.Add(textBox8);
+            panel5.Controls.Add(cbXuatXu);
+            panel5.Controls.Add(cbLoai);
+            panel5.Controls.Add(cbHang);
+            panel5.Controls.Add(cbTenSP);
+            panel5.Controls.Add(txtNCC);
             panel5.Controls.Add(label9);
             panel5.Controls.Add(label10);
             panel5.Controls.Add(label11);
@@ -378,8 +378,8 @@
             panel5.Controls.Add(label2);
             panel5.Controls.Add(label1);
             panel5.Controls.Add(panel7);
-            panel5.Controls.Add(textBox4);
-            panel5.Controls.Add(textBox1);
+            panel5.Controls.Add(txtGia);
+            panel5.Controls.Add(txtMaSP);
             panel5.Controls.Add(label8);
             panel5.Controls.Add(label7);
             panel5.Controls.Add(label6);
@@ -392,45 +392,45 @@
             panel5.TabIndex = 7;
             panel5.Paint += Panel5_Paint;
             // 
-            // comboBox4
+            // cbXuatXu
             // 
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(413, 176);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(120, 25);
-            comboBox4.TabIndex = 31;
-            comboBox4.SelectedIndexChanged += comboBox4_SelectedIndexChanged;
+            cbXuatXu.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbXuatXu.FormattingEnabled = true;
+            cbXuatXu.Location = new Point(413, 176);
+            cbXuatXu.Name = "cbXuatXu";
+            cbXuatXu.Size = new Size(120, 25);
+            cbXuatXu.TabIndex = 31;
+            cbXuatXu.SelectedIndexChanged += comboBox4_SelectedIndexChanged;
             // 
-            // comboBox3
+            // cbLoai
             // 
-            comboBox3.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(249, 173);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(120, 25);
-            comboBox3.TabIndex = 30;
-            comboBox3.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
+            cbLoai.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbLoai.FormattingEnabled = true;
+            cbLoai.Location = new Point(249, 173);
+            cbLoai.Name = "cbLoai";
+            cbLoai.Size = new Size(120, 25);
+            cbLoai.TabIndex = 30;
+            cbLoai.SelectedIndexChanged += comboBox3_SelectedIndexChanged;
             // 
-            // comboBox2
+            // cbHang
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(413, 96);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(120, 25);
-            comboBox2.TabIndex = 29;
-            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            cbHang.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbHang.FormattingEnabled = true;
+            cbHang.Location = new Point(413, 96);
+            cbHang.Name = "cbHang";
+            cbHang.Size = new Size(120, 25);
+            cbHang.TabIndex = 29;
+            cbHang.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
-            // comboBox1
+            // cbTenSP
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(249, 100);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(120, 25);
-            comboBox1.TabIndex = 28;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            cbTenSP.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbTenSP.FormattingEnabled = true;
+            cbTenSP.Location = new Point(249, 100);
+            cbTenSP.Name = "cbTenSP";
+            cbTenSP.Size = new Size(120, 25);
+            cbTenSP.TabIndex = 28;
+            cbTenSP.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // FormProduct
             // 
@@ -460,8 +460,8 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private TextBox textBox1;
-        private TextBox textBox4;
+        private TextBox txtMaSP;
+        private TextBox txtGia;
         private Panel panel7;
         private FontAwesome.Sharp.IconButton btnLamMoi;
         private FontAwesome.Sharp.IconButton btnXoa;
@@ -472,16 +472,16 @@
         private Label label3;
         private Panel panel1;
         private FontAwesome.Sharp.IconButton iconButton1;
-        private TextBox textBox5;
+        private TextBox txtTimKiem;
         private Label label11;
         private Label label10;
         private Label label9;
-        private TextBox textBox8;
+        private TextBox txtNCC;
         private Panel panel5;
         private DataGridView list;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox cbXuatXu;
+        private ComboBox cbLoai;
+        private ComboBox cbHang;
+        private ComboBox cbTenSP;
     }
 }
