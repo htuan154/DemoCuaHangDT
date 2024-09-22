@@ -31,6 +31,8 @@
             panel6 = new Panel();
             list = new DataGridView();
             panel5 = new Panel();
+            dtpNgaySinh = new DateTimePicker();
+            label12 = new Label();
             txtSDTNV = new TextBox();
             txtTenNV = new TextBox();
             txtMatKhau = new TextBox();
@@ -50,7 +52,7 @@
             btnXoa = new FontAwesome.Sharp.IconButton();
             btnSua = new FontAwesome.Sharp.IconButton();
             btnThem = new FontAwesome.Sharp.IconButton();
-            txtQueQuan = new TextBox();
+            txtDiaChi = new TextBox();
             txtMaNV = new TextBox();
             label8 = new Label();
             label7 = new Label();
@@ -83,6 +85,8 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(dtpNgaySinh);
+            panel5.Controls.Add(label12);
             panel5.Controls.Add(txtSDTNV);
             panel5.Controls.Add(txtTenNV);
             panel5.Controls.Add(txtMatKhau);
@@ -96,7 +100,7 @@
             panel5.Controls.Add(label2);
             panel5.Controls.Add(label1);
             panel5.Controls.Add(panel7);
-            panel5.Controls.Add(txtQueQuan);
+            panel5.Controls.Add(txtDiaChi);
             panel5.Controls.Add(txtMaNV);
             panel5.Controls.Add(label8);
             panel5.Controls.Add(label7);
@@ -107,6 +111,25 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(1018, 316);
             panel5.TabIndex = 9;
+            // 
+            // dtpNgaySinh
+            // 
+            dtpNgaySinh.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpNgaySinh.Location = new Point(578, 173);
+            dtpNgaySinh.Name = "dtpNgaySinh";
+            dtpNgaySinh.Size = new Size(120, 25);
+            dtpNgaySinh.TabIndex = 24;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.WhiteSmoke;
+            label12.Location = new Point(578, 141);
+            label12.Name = "label12";
+            label12.Size = new Size(78, 19);
+            label12.TabIndex = 23;
+            label12.Text = "Ngày Sinh";
             // 
             // txtSDTNV
             // 
@@ -276,6 +299,7 @@
             btnLamMoi.TextAlign = ContentAlignment.MiddleLeft;
             btnLamMoi.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnLamMoi.UseVisualStyleBackColor = false;
+            btnLamMoi.Click += btnLamMoi_Click;
             // 
             // btnXoa
             // 
@@ -298,6 +322,7 @@
             btnXoa.TextAlign = ContentAlignment.MiddleLeft;
             btnXoa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnSua
             // 
@@ -320,6 +345,7 @@
             btnSua.TextAlign = ContentAlignment.MiddleLeft;
             btnSua.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
             // btnThem
             // 
@@ -342,13 +368,14 @@
             btnThem.TextAlign = ContentAlignment.MiddleLeft;
             btnThem.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
-            // txtQueQuan
+            // txtDiaChi
             // 
-            txtQueQuan.Location = new Point(578, 96);
-            txtQueQuan.Name = "txtQueQuan";
-            txtQueQuan.Size = new Size(120, 27);
-            txtQueQuan.TabIndex = 8;
+            txtDiaChi.Location = new Point(578, 96);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(120, 27);
+            txtDiaChi.TabIndex = 8;
             // 
             // txtMaNV
             // 
@@ -364,9 +391,9 @@
             label8.ForeColor = Color.WhiteSmoke;
             label8.Location = new Point(578, 58);
             label8.Name = "label8";
-            label8.Size = new Size(76, 19);
+            label8.Size = new Size(61, 19);
             label8.TabIndex = 4;
-            label8.Text = "Quê Quán";
+            label8.Text = "Địa Chỉ";
             // 
             // label7
             // 
@@ -452,7 +479,7 @@
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton btnSua;
         private FontAwesome.Sharp.IconButton btnThem;
-        private TextBox txtQueQuan;
+        private TextBox txtDiaChi;
         private TextBox txtMaNV;
         private Label label8;
         private Label label7;
@@ -463,5 +490,7 @@
         private TextBox txtTenNV;
         private TextBox txtMatKhau;
         private DataGridView list;
+        private Label label12;
+        private DateTimePicker dtpNgaySinh;
     }
 }

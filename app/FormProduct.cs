@@ -267,7 +267,7 @@ namespace app
                     return;
                 }
 
-                string query = "sp_UpdateSanPham";
+                string query = "sp_UpdateSanPham_new";
 
                 SqlParameter[] parameters = new SqlParameter[]
                 {

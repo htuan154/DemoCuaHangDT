@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "C:\\Wordspace\\app_ngay9_9_2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formwarehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formwarehouse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|C:\\Wordspace\\app_ngay9_9_2024\\app\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|c:\\wordspace\\app_ngay9_9_2024\\app\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83131AB6-CE52-42DE-AD8C-AA8F019F4B3C}|app\\app.csproj|solutionrelative:app\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,23 +54,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormSupplier.cs [Design]",
-              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormSupplier.cs",
-              "RelativeDocumentMoniker": "app\\FormSupplier.cs",
-              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormSupplier.cs [Design]",
-              "RelativeToolTip": "app\\FormSupplier.cs [Design]",
+              "Title": "FormProduct.cs",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormProduct.cs",
+              "RelativeDocumentMoniker": "app\\FormProduct.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormProduct.cs",
+              "RelativeToolTip": "app\\FormProduct.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T12:02:33.082Z",
+              "WhenOpened": "2024-09-22T16:52:44.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormStaff.cs",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormStaff.cs",
+              "RelativeDocumentMoniker": "app\\FormStaff.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormStaff.cs*",
+              "RelativeToolTip": "app\\FormStaff.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABgAAAAYAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:47:26.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormStaff.cs [Design]",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormStaff.cs",
+              "RelativeDocumentMoniker": "app\\FormStaff.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormStaff.cs [Design]*",
+              "RelativeToolTip": "app\\FormStaff.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:46:44.661Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FormWarehouse.cs [Design]",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormWarehouse.cs",
+              "RelativeDocumentMoniker": "app\\FormWarehouse.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormWarehouse.cs [Design]",
+              "RelativeToolTip": "app\\FormWarehouse.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:46:50.488Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormProduct.cs [Design]",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormProduct.cs",
+              "RelativeDocumentMoniker": "app\\FormProduct.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormProduct.cs [Design]",
+              "RelativeToolTip": "app\\FormProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:46:39.405Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormCustomer.cs",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs",
+              "RelativeDocumentMoniker": "app\\FormCustomer.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs",
+              "RelativeToolTip": "app\\FormCustomer.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T11:37:47.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormMainMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormMainMenu.cs",
+              "RelativeDocumentMoniker": "app\\FormMainMenu.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormMainMenu.cs [Design]",
+              "RelativeToolTip": "app\\FormMainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:46:35.801Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormHome.cs [Design]",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormHome.cs",
+              "RelativeDocumentMoniker": "app\\FormHome.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormHome.cs [Design]",
+              "RelativeToolTip": "app\\FormHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:46:34.868Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs",
+              "RelativeDocumentMoniker": "app\\FormCustomer.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs [Design]",
+              "RelativeToolTip": "app\\FormCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T16:46:33.014Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormNewBill.cs",
+              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormNewBill.cs",
+              "RelativeDocumentMoniker": "app\\FormNewBill.cs",
+              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormNewBill.cs",
+              "RelativeToolTip": "app\\FormNewBill.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAAAEIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T06:22:09.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FormNewBill.cs [Design]",
               "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormNewBill.cs",
               "RelativeDocumentMoniker": "app\\FormNewBill.cs",
@@ -55,44 +191,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-21T12:00:17.205Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormSupplier.cs",
-              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormSupplier.cs",
-              "RelativeDocumentMoniker": "app\\FormSupplier.cs",
-              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormSupplier.cs",
-              "RelativeToolTip": "app\\FormSupplier.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAAAFIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T10:57:02.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs",
-              "RelativeDocumentMoniker": "app\\FormCustomer.cs",
-              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs [Design]*",
-              "RelativeToolTip": "app\\FormCustomer.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:39:19.532Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormCustomer.cs",
-              "DocumentMoniker": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs",
-              "RelativeDocumentMoniker": "app\\FormCustomer.cs",
-              "ToolTip": "C:\\Wordspace\\app_ngay9_9_2024\\app\\FormCustomer.cs*",
-              "RelativeToolTip": "app\\FormCustomer.cs*",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T11:37:47.263Z",
-              "EditorCaption": ""
             }
           ]
         }

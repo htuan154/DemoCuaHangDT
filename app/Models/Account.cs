@@ -24,10 +24,23 @@ namespace app.Models
         }
 
         private Account() { }
+        public string AdminId { get; private set; }
+        //public bool Login(string username, string password)
+        //{
+        //    string query = "USP_Login_2";
+        //    var parameters = new[]
+        //    {
+        //        new SqlParameter("@username", username),
+        //        new SqlParameter("@password", password)
+        //    };
 
-        public bool Login(string username, string password)
+        //    DataTable result = DataProvider.Instance.ExecuteQuery(query, parameters, CommandType.StoredProcedure);
+
+        //    return result.Rows.Count > 0;
+        //}
+        public UserAccount Login(string username, string password)
         {
-            string query = "USP_Login";
+            string query = "USP_Login_2"; 
             var parameters = new[]
             {
                 new SqlParameter("@username", username),
@@ -36,8 +49,25 @@ namespace app.Models
 
             DataTable result = DataProvider.Instance.ExecuteQuery(query, parameters, CommandType.StoredProcedure);
 
-            return result.Rows.Count > 0;
-        }
+            if (result.Rows.Count > 0)
+            {
+                
+                string role = result.Rows[0]["role"].ToString();
+                string userName = result.Rows[0]["tai_khoan"].ToString();
+                string adminId = result.Rows[0]["id"].ToString();
 
+                AdminId = adminId;
+
+
+                return new UserAccount
+                {
+                    Role = role,
+                    Username = userName,
+                    AdminId = adminId 
+                };
+            }
+
+            return null; 
+        }
     }
 }

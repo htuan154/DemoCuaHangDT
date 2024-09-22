@@ -36,6 +36,9 @@
             btnReset = new FontAwesome.Sharp.IconButton();
             panel5 = new Panel();
             panel2 = new Panel();
+            cbKH = new ComboBox();
+            panel4 = new Panel();
+            btnThemHD = new FontAwesome.Sharp.IconButton();
             cbNV = new ComboBox();
             dateTimePicker1 = new DateTimePicker();
             txtSDT = new TextBox();
@@ -57,17 +60,14 @@
             label3 = new Label();
             panel7 = new Panel();
             btnThemSpVaoHD = new FontAwesome.Sharp.IconButton();
-            panel4 = new Panel();
-            iconButton6 = new FontAwesome.Sharp.IconButton();
-            cbKH = new ComboBox();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)list).BeginInit();
             panel3.SuspendLayout();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
+            panel4.SuspendLayout();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
-            panel4.SuspendLayout();
             SuspendLayout();
             // 
             // panel6
@@ -164,6 +164,7 @@
             btnReset.TextAlign = ContentAlignment.MiddleLeft;
             btnReset.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
             // panel5
             // 
@@ -196,6 +197,45 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(538, 309);
             panel2.TabIndex = 26;
+            // 
+            // cbKH
+            // 
+            cbKH.FormattingEnabled = true;
+            cbKH.Location = new Point(176, 91);
+            cbKH.Name = "cbKH";
+            cbKH.Size = new Size(120, 25);
+            cbKH.TabIndex = 28;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(btnThemHD);
+            panel4.Location = new Point(349, 235);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(140, 45);
+            panel4.TabIndex = 28;
+            // 
+            // btnThemHD
+            // 
+            btnThemHD.BackColor = Color.FromArgb(34, 34, 74);
+            btnThemHD.Dock = DockStyle.Left;
+            btnThemHD.FlatAppearance.BorderSize = 0;
+            btnThemHD.Font = new Font("Times New Roman", 12F);
+            btnThemHD.ForeColor = Color.Gainsboro;
+            btnThemHD.IconChar = FontAwesome.Sharp.IconChar.Add;
+            btnThemHD.IconColor = Color.Gainsboro;
+            btnThemHD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnThemHD.IconSize = 32;
+            btnThemHD.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThemHD.Location = new Point(0, 0);
+            btnThemHD.Name = "btnThemHD";
+            btnThemHD.Padding = new Padding(10, 0, 20, 0);
+            btnThemHD.Size = new Size(130, 45);
+            btnThemHD.TabIndex = 3;
+            btnThemHD.Text = "Thêm";
+            btnThemHD.TextAlign = ContentAlignment.MiddleLeft;
+            btnThemHD.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnThemHD.UseVisualStyleBackColor = false;
+            btnThemHD.Click += btnThemHD_Click;
             // 
             // cbNV
             // 
@@ -413,44 +453,7 @@
             btnThemSpVaoHD.TextAlign = ContentAlignment.MiddleLeft;
             btnThemSpVaoHD.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnThemSpVaoHD.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(iconButton6);
-            panel4.Location = new Point(349, 235);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(140, 45);
-            panel4.TabIndex = 28;
-            // 
-            // iconButton6
-            // 
-            iconButton6.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton6.Dock = DockStyle.Left;
-            iconButton6.FlatAppearance.BorderSize = 0;
-            iconButton6.Font = new Font("Times New Roman", 12F);
-            iconButton6.ForeColor = Color.Gainsboro;
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.Add;
-            iconButton6.IconColor = Color.Gainsboro;
-            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.IconSize = 32;
-            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(0, 0);
-            iconButton6.Name = "iconButton6";
-            iconButton6.Padding = new Padding(10, 0, 20, 0);
-            iconButton6.Size = new Size(130, 45);
-            iconButton6.TabIndex = 3;
-            iconButton6.Text = "Thêm";
-            iconButton6.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton6.UseVisualStyleBackColor = false;
-            // 
-            // cbKH
-            // 
-            cbKH.FormattingEnabled = true;
-            cbKH.Location = new Point(176, 91);
-            cbKH.Name = "cbKH";
-            cbKH.Size = new Size(120, 25);
-            cbKH.TabIndex = 28;
+            btnThemSpVaoHD.Click += btnThemSpVaoHD_Click;
             // 
             // FormNewBill
             // 
@@ -468,10 +471,10 @@
             panel5.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel4.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel7.ResumeLayout(false);
-            panel4.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -507,7 +510,7 @@
         private ComboBox cbNV;
         private ComboBox cbChonSp;
         private Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton btnThemHD;
         private ComboBox cbKH;
     }
 }

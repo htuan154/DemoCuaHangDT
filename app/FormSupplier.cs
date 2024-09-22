@@ -104,6 +104,7 @@ namespace app
                 if (result > 0)
                 {
                     MessageBox.Show("Thêm nhà cung cấp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    LoadDataList();
                 }
                 else
                 {
@@ -142,6 +143,7 @@ namespace app
                 if (result > 0)
                 {
                     MessageBox.Show("Cập nhật nhà cung cấp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    LoadDataList();
                 }
                 else
                 {
@@ -181,7 +183,7 @@ namespace app
                 {
                     MessageBox.Show("Xóa nhà cung cấp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 
-
+                    LoadDataList();
                 }
                 else
                 {

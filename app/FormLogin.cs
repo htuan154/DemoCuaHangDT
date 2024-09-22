@@ -40,7 +40,8 @@ namespace app
         {
             string userName = textBox1.Text;
             string password = textBox2.Text;
-            if (Login(userName, password))
+            var userAccount = Account.Instance.Login(userName, password);
+            if (userAccount != null)
             {
                 FormMainMenu f = new FormMainMenu();
                 this.Hide();
@@ -52,10 +53,36 @@ namespace app
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu");
             }
         }
+        //bool Login(string userName, string passWord)
+        //{
+        //    return Account.Instance.Login(userName, passWord);
+        //}
         bool Login(string userName, string passWord)
         {
-            return Account.Instance.Login(userName, passWord);
+            var userAccount = Account.Instance.Login(userName, passWord);
+            if (userAccount != null)
+            {
+                if (userAccount.Role == "Admin")
+                {
+                    
+                    MessageBox.Show("Đăng nhập thành công với quyền Admin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return true; 
+                }
+                else if (userAccount.Role == "TaiKhoan")
+                {
+                    
+                    MessageBox.Show("Đăng nhập thành công với quyền Nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return true; 
+                }
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return false; 
         }
+
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
