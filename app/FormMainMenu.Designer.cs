@@ -305,6 +305,7 @@
             // panelTiltleBar
             // 
             panelTiltleBar.BackColor = Color.FromArgb(26, 25, 62);
+            panelTiltleBar.Controls.Add(pictureBox2);
             panelTiltleBar.Controls.Add(panel1);
             panelTiltleBar.Controls.Add(lblTitleChildForm);
             panelTiltleBar.Controls.Add(iconCurrentChildForm);
@@ -316,7 +317,6 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(917, 0);
             panel1.Name = "panel1";
@@ -326,7 +326,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 16);
+            pictureBox2.Location = new Point(861, 8);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(50, 50);
             pictureBox2.TabIndex = 3;
@@ -337,7 +337,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 10F);
             label1.ForeColor = Color.FromArgb(172, 126, 241);
-            label1.Location = new Point(79, 32);
+            label1.Location = new Point(3, 26);
             label1.Name = "label1";
             label1.Size = new Size(54, 19);
             label1.TabIndex = 2;

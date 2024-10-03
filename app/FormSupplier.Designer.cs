@@ -47,9 +47,9 @@
             iconButton1 = new FontAwesome.Sharp.IconButton();
             txtTimKiem = new TextBox();
             label2 = new Label();
-            label1 = new Label();
             panel6 = new Panel();
             listNhaCungCap = new DataGridView();
+            a = new Label();
             panel7.SuspendLayout();
             panel5.SuspendLayout();
             panel1.SuspendLayout();
@@ -245,9 +245,9 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(a);
             panel5.Controls.Add(panel1);
             panel5.Controls.Add(label2);
-            panel5.Controls.Add(label1);
             panel5.Controls.Add(panel7);
             panel5.Controls.Add(txtEmail);
             panel5.Controls.Add(txtSDTNCC);
@@ -309,41 +309,41 @@
             label2.TabIndex = 12;
             label2.Text = "Tìm Kiếm";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(16, 235);
-            label1.Name = "label1";
-            label1.Size = new Size(197, 22);
-            label1.TabIndex = 10;
-            label1.Text = "Danh sách nhà cung cấp";
-            // 
             // panel6
             // 
             panel6.Controls.Add(listNhaCungCap);
-            panel6.Location = new Point(12, 287);
+            panel6.Location = new Point(12, 302);
             panel6.Name = "panel6";
-            panel6.Size = new Size(1020, 326);
+            panel6.Size = new Size(1020, 344);
             panel6.TabIndex = 6;
             // 
             // listNhaCungCap
             // 
             listNhaCungCap.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            listNhaCungCap.Location = new Point(14, 14);
+            listNhaCungCap.Location = new Point(13, 19);
             listNhaCungCap.Name = "listNhaCungCap";
             listNhaCungCap.RowHeadersWidth = 51;
             listNhaCungCap.Size = new Size(996, 283);
             listNhaCungCap.TabIndex = 0;
             listNhaCungCap.CellClick += listNhaCungCap_CellClick;
             // 
+            // a
+            // 
+            a.AutoSize = true;
+            a.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            a.ForeColor = Color.WhiteSmoke;
+            a.Location = new Point(11, 242);
+            a.Name = "a";
+            a.Size = new Size(197, 22);
+            a.TabIndex = 12;
+            a.Text = "Danh sách nhà cung cấp";
+            // 
             // FormSupplier
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 34, 74);
-            ClientSize = new Size(1044, 572);
+            ClientSize = new Size(1045, 658);
             Controls.Add(panel6);
             Controls.Add(panel5);
             Name = "FormSupplier";
@@ -376,12 +376,12 @@
         private FontAwesome.Sharp.IconButton iconButton1;
         private Label label2;
         private TextBox txtTimKiem;
-        private Label label1;
         private Panel panel1;
         private FontAwesome.Sharp.IconButton btnLamMoi;
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton btnSua;
         private FontAwesome.Sharp.IconButton btnThem;
         private DataGridView listNhaCungCap;
+        private Label a;
     }
 }

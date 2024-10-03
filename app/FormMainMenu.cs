@@ -1,4 +1,4 @@
-using FontAwesome.Sharp;
+﻿using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
 namespace app
 {
@@ -278,7 +278,41 @@ namespace app
         {
 
         }
+        public void SetUserRole(string role)
+        {
+            // Cập nhật label1.Text dựa trên vai trò
+            label1.Text = (role == "Admin") ? "Admin" : "Nhân Viên";
+           
 
+            // Nếu là nhân viên, chỉ hiện nút NewBill
+            if (role == "Admin")
+            {
+                // Admin có thể thấy tất cả các nút
+                btnNewBill.Visible = true;
+                btnCustomer.Visible = true;
+                btnHome.Visible = true;
+                btnSupplier.Visible = true;
+                btnProduct.Visible = true;
+                btnWarehouse.Visible = true;
+                btnStaff.Visible = true;
+                btnStatistical.Visible = true;
+            }
+            else 
+            {
+                
+
+                btnNewBill.Visible = true;
+                btnCustomer.Visible = true;
+                btnHome.Visible = true;
+                btnSupplier.Visible = false;
+                btnProduct.Visible = true;
+                btnWarehouse.Visible = true;
+                btnStaff.Visible = false;
+                btnStatistical.Visible =true;
+            }
+        }
+       
         
+
     }
 }

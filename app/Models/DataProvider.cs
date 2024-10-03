@@ -21,7 +21,8 @@ namespace app.Models
         {
 
         }
-        private string connectionSTR = @"Data Source=DESKTOP-T8J9RG9;Initial Catalog=QL_CUAHANGDT3;Integrated Security=True;Trust Server Certificate=True";
+        
+        private string connectionSTR = @"Data Source=DESKTOP-T8J9RG9;Initial Catalog=QL_CUAHANGDT;Integrated Security=True;Trust Server Certificate=True";
 
 
 

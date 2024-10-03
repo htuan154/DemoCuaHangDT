@@ -16,6 +16,7 @@ namespace app
 {
     public partial class FormSupplier : Form
     {
+       
 
         public FormSupplier()
         {
@@ -23,7 +24,10 @@ namespace app
             LoadDataList();
             listNhaCungCap.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+           
+            
         }
+
 
         private void LoadDataList()
         {
@@ -205,6 +209,11 @@ namespace app
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            txtMaNCC.Clear();
+            txtSDTNCC.Clear();
+            txtTenNCC.Clear();
+            txtTimKiem.Clear();
+            txtEmail.Clear();
             LoadDataList();
         }
     }
