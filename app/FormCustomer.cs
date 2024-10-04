@@ -70,6 +70,7 @@ namespace app
             txtSDTKH.Text = row.Cells[2].Value.ToString(); // Số Điện Thoại
             txtEmailKH.Text = row.Cells[3].Value.ToString(); // Email Liên Hệ
             txtDiaChiKH.Text = row.Cells[4].Value.ToString(); // Địa Chỉ
+            txtLoaiKH.Text = row.Cells[5].Value.ToString();
         }
 
         private void ClearTextBoxes()
@@ -94,7 +95,8 @@ namespace app
                     new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = txtTenKH.Text.Trim() },
                     new SqlParameter("@sdt", SqlDbType.VarChar, 20) { Value = txtSDTKH.Text.Trim() },
                     new SqlParameter("@email", SqlDbType.VarChar, 255) { Value = txtEmailKH.Text.Trim() },
-                    new SqlParameter("@dia_chi", SqlDbType.NVarChar, 255) { Value = txtDiaChiKH.Text.Trim() }
+                    new SqlParameter("@dia_chi", SqlDbType.NVarChar, 255) { Value = txtDiaChiKH.Text.Trim() },
+                    new SqlParameter("@loai_khach_hang", SqlDbType.NVarChar, 50) { Value = txtLoaiKH.Text.Trim() } // Thêm loại khách hàng
                 };
 
 
@@ -127,7 +129,7 @@ namespace app
         {
             try
             {
-                string query = "sp_UpdateKhachHang_new";  
+                string query = "sp_UpdateKhachHang_new";
 
 
                 SqlParameter[] parameters = new SqlParameter[]
@@ -136,7 +138,8 @@ namespace app
                     new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = txtTenKH.Text.Trim() },
                     new SqlParameter("@sdt", SqlDbType.VarChar, 20) { Value = txtSDTKH.Text.Trim() },
                     new SqlParameter("@email", SqlDbType.VarChar, 255) { Value = txtEmailKH.Text.Trim() },
-                    new SqlParameter("@dia_chi", SqlDbType.NVarChar, 255) { Value = txtDiaChiKH.Text.Trim() }
+                    new SqlParameter("@dia_chi", SqlDbType.NVarChar, 255) { Value = txtDiaChiKH.Text.Trim() },
+                     new SqlParameter("@loai_khach_hang", SqlDbType.NVarChar, 50) { Value = txtLoaiKH.Text.Trim() } // Thêm loại khách hàng
                 };
 
                 int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
@@ -167,11 +170,11 @@ namespace app
         {
             try
             {
-                string query = "sp_DeleteKhachHang";  
+                string query = "sp_DeleteKhachHang";
 
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                    new SqlParameter("@ma_kh", SqlDbType.Char, 10) { Value = txtMaKH.Text.Trim() }  
+                    new SqlParameter("@ma_kh", SqlDbType.Char, 10) { Value = txtMaKH.Text.Trim() }
                 };
 
                 int result = DataProvider.Instance.ExecuteNonQuery(query, parameters);
@@ -201,6 +204,11 @@ namespace app
         {
             LoadDataList();
             ClearTextBoxes();
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
 
         }
     }

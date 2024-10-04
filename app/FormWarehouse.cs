@@ -57,5 +57,11 @@ namespace app
         {
 
         }
+
+        private void btnNhapHang_Click(object sender, EventArgs e)
+        {
+            FormNhapHang f = new FormNhapHang();
+            f.Show();
+        }
     }
 }

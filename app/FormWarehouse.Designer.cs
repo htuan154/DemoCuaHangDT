@@ -74,6 +74,7 @@
             btnNhapHang.TextAlign = ContentAlignment.MiddleLeft;
             btnNhapHang.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnNhapHang.UseVisualStyleBackColor = false;
+            btnNhapHang.Click += btnNhapHang_Click;
             // 
             // btnXoa
             // 

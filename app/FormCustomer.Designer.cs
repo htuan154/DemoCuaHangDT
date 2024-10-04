@@ -31,6 +31,8 @@
             panel6 = new Panel();
             list = new DataGridView();
             panel5 = new Panel();
+            txtLoaiKH = new TextBox();
+            label9 = new Label();
             label3 = new Label();
             txtDiaChiKH = new TextBox();
             panel1 = new Panel();
@@ -78,6 +80,8 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(txtLoaiKH);
+            panel5.Controls.Add(label9);
             panel5.Controls.Add(label3);
             panel5.Controls.Add(txtDiaChiKH);
             panel5.Controls.Add(panel1);
@@ -97,6 +101,25 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(1023, 301);
             panel5.TabIndex = 7;
+            // 
+            // txtLoaiKH
+            // 
+            txtLoaiKH.Location = new Point(645, 158);
+            txtLoaiKH.Name = "txtLoaiKH";
+            txtLoaiKH.Size = new Size(85, 27);
+            txtLoaiKH.TabIndex = 18;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.WhiteSmoke;
+            label9.Location = new Point(578, 164);
+            label9.Name = "label9";
+            label9.Size = new Size(40, 19);
+            label9.TabIndex = 17;
+            label9.Text = "Loại";
+            label9.Click += label9_Click;
             // 
             // label3
             // 
@@ -407,5 +430,7 @@
         private Label label4;
         private Label label3;
         private TextBox txtDiaChiKH;
+        private TextBox txtLoaiKH;
+        private Label label9;
     }
 }

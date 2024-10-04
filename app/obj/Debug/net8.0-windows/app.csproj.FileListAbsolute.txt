@@ -308,3 +308,4 @@ C:\Wordspace\app_ngay9_9_2024\app\obj\Debug\net8.0-windows\refint\app.dll
 C:\Wordspace\app_ngay9_9_2024\app\obj\Debug\net8.0-windows\app.pdb
 C:\Wordspace\app_ngay9_9_2024\app\obj\Debug\net8.0-windows\app.genruntimeconfig.cache
 C:\Wordspace\app_ngay9_9_2024\app\obj\Debug\net8.0-windows\ref\app.dll
+C:\Wordspace\app_ngay9_9_2024\app\obj\Debug\net8.0-windows\app.FormNhapHang.resources

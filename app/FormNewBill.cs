@@ -46,6 +46,7 @@ namespace app
                 // Thêm vào ComboBox
                 cbKH.Items.Add(displayText);
             }
+            cbKH.SelectedIndex = 0;
         }
         private DataTable GetDataMaKH()
         {
@@ -70,6 +71,7 @@ namespace app
                 // Thêm vào ComboBox
                 cbNV.Items.Add(displayText);
             }
+            cbNV.SelectedIndex = 0;
         }
         private DataTable GetDataMaNV()
         {
@@ -78,10 +80,10 @@ namespace app
         }
         private void LoadDataList()
         {
-            string query = "SELECT h.[ma_hoa_don] AS 'Mã Hóa Đơn', kh.[loai_khach_hang] AS 'Loại Khách Hàng', kh.[ten] AS 'Tên Khách Hàng', kh.[email] AS 'Email', kh.[sdt] AS 'Số Điện Thoại',kh.[dia_chi] AS 'Địa Chỉ', h.[tinh_trang] AS 'Tình Trạng', h.[ngay_tao] AS 'Ngày Tạo', nv.[ten] AS 'Tên Nhân Viên' " +
-               "FROM [QL_CUAHANGDT3].[dbo].[HoaDonBan] h " +
-               "JOIN [QL_CUAHANGDT3].[dbo].[KhachHang] kh ON h.[ma_khach_hang] = kh.[ma_kh] " +
-               "JOIN [QL_CUAHANGDT3].[dbo].[NhanVien] nv ON h.[ma_nhan_vien] = nv.[ma_nhan_vien];";
+            string query = "SELECT h.[ma_hoa_don] AS 'Mã Hóa Đơn', kh.[loai_khach_hang] AS 'Loại Khách Hàng', kh.[ma_kh] AS 'Mã Khách Hàng', kh.[email] AS 'Email', kh.[sdt] AS 'Số Điện Thoại',kh.[dia_chi] AS 'Địa Chỉ', h.[tinh_trang] AS 'Tình Trạng', h.[ngay_tao] AS 'Ngày Tạo', nv.[ma_nhan_vien] AS 'Mã Nhân Viên' " +
+               "FROM [QL_CUAHANGDT].[dbo].[HoaDonBan] h " +
+               "JOIN [QL_CUAHANGDT].[dbo].[KhachHang] kh ON h.[ma_khach_hang] = kh.[ma_kh] " +
+               "JOIN [QL_CUAHANGDT].[dbo].[NhanVien] nv ON h.[ma_nhan_vien] = nv.[ma_nhan_vien];";
 
             list.DataSource = DataProvider.Instance.ExecuteQuery(query, commandType: CommandType.Text);
             list.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -145,6 +147,7 @@ namespace app
                 // Thêm vào ComboBox
                 cbChonSp.Items.Add(displayText);
             }
+            cbChonSp.SelectedIndex = 0;
         }
         private DataTable GetProductData()
         {
@@ -165,7 +168,7 @@ namespace app
 
         private void btnThemHD_Click(object sender, EventArgs e)
         {
-            if (txtmahd.TextLength != 5 || cbKH.SelectedIndex < 0 || cbNV.SelectedIndex < 0)
+            if (txtmahd.TextLength != 6 || cbKH.SelectedIndex == null || cbNV.SelectedIndex == null)
             {
                 MessageBox.Show("Vui lòng nhập đủ thông tin!");
                 return;
@@ -176,7 +179,7 @@ namespace app
             string tinhtrang = "Chưa thanh toán";
             DateTime ngaytao = dateTimePicker1.Value;
 
-            if (!(addmahd.Length == 5 && addmahd.StartsWith("HD") == true && addmahd.Substring(2).All(char.IsDigit) == true) || ktrMaHD(addmahd) == -1)
+            if (!(addmahd.Length == 6 && addmahd.StartsWith("HDB") == true && addmahd.Substring(3).All(char.IsDigit) == true) || ktrMaHD(addmahd) == -1)
             {
                 MessageBox.Show("Vui lòng kiểm tra mã hóa đơn!");
                 return;
@@ -194,6 +197,8 @@ namespace app
                 {
                     Console.WriteLine("An error occurred during insertion. Please check the logs for details.");
                 }
+
+                LoadDataList();
             }
         }
         private int ktrMaHD(string ktrmahd)
@@ -220,9 +225,31 @@ namespace app
             txtmahd.Text = row.Cells[0].Value.ToString();
             txtDiaChi.Text = row.Cells[5].Value.ToString();
             txtSDT.Text = row.Cells[4].Value.ToString();
-            cbKH.SelectedItem = row.Cells[2].Value.ToString();
-            cbNV.SelectedItem = row.Cells[7].Value.ToString();
-            if (DateTime.TryParse(row.Cells[6].Value.ToString(), out DateTime ngayTao))
+            // Tìm và chọn giá trị khớp trong ComboBox cbKH (Khách hàng)
+            string maKhachHang = row.Cells[2].Value.ToString().Trim();  // Xóa khoảng trắng
+            int khachHangIndex = cbKH.FindStringExact(maKhachHang);
+            if (khachHangIndex != -1)
+            {
+                cbKH.SelectedIndex = khachHangIndex;
+            }
+            else
+            {
+                cbKH.SelectedIndex = -1; // Không tìm thấy
+            }
+
+            // Tìm và chọn giá trị khớp trong ComboBox cbNV (Nhân viên)
+            string maNhanVien = row.Cells[8].Value.ToString().Trim();  // Xóa khoảng trắng
+            int nhanVienIndex = cbNV.FindStringExact(maNhanVien);
+            if (nhanVienIndex != -1)
+            {
+                cbNV.SelectedIndex = nhanVienIndex;
+            }
+            else
+            {
+                cbNV.SelectedIndex = -1; // Không tìm thấy
+            }
+
+            if (DateTime.TryParse(row.Cells[7].Value.ToString(), out DateTime ngayTao))
             {
                 dateTimePicker1.Value = ngayTao;
             }
@@ -293,13 +320,64 @@ namespace app
                 MessageBox.Show("Vui lòng kiểm tra lại số lượng mua(số lượng mua phải bé hơn số lượng tồn kho)!");
                 return;
             }
-            else
+
+            string queryCheck = "SELECT so_luong FROM ChiTietHoaDonBan WHERE ma_hoa_don = @ma_hoa_don AND ma_san_pham = @ma_san_pham";
+            SqlParameter[] checkParams = new SqlParameter[]
             {
-                int rowsAffected = DataProvider.Instance.InsertDataUsingStoredProcedure("sp_InsertChiTietHoaDonBan", new SqlParameter[] { new SqlParameter("@ma_hoa_don", mahd), new SqlParameter("@ma_san_pham", maspduocchon), new SqlParameter("@don_gia", dssanpham[thutuspduocchon].Gia), new SqlParameter("@so_luong", soluongmua) });
+                new SqlParameter("@ma_hoa_don", mahd),
+                new SqlParameter("@ma_san_pham", maspduocchon)
+            };
+
+            DataTable result = DataProvider.Instance.ExecuteQuery(queryCheck, checkParams);
+
+            if (result.Rows.Count > 0)
+            {
+                // Sản phẩm đã tồn tại, cập nhật số lượng
+                int soluongHienTai = Convert.ToInt32(result.Rows[0]["so_luong"]);
+                int soluongMoi = soluongHienTai + soluongmua;
+
+                int rowsAffected = DataProvider.Instance.UpdateDataUsingStoredProcedure(
+                    "sp_UpdateChiTietHoaDonBan",
+                    new SqlParameter[]
+                    {
+                        new SqlParameter("@ma_hoa_don", mahd),
+                        new SqlParameter("@ma_san_pham", maspduocchon),
+                        new SqlParameter("@don_gia", dssanpham[thutuspduocchon].Gia),
+                        new SqlParameter("@so_luong", soluongMoi),
+                        new SqlParameter("@tinh_trang","N'Chưa thanh toán'")
+
+                    }
+                );
 
                 if (rowsAffected > 0)
                 {
+                    LoadDataToComboBox();
+                    MessageBox.Show("Cập nhật số lượng sản phẩm thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Đã có lỗi xảy ra vui lòng kiểm tra!");
+                }
+            }
+            else
+            {
+                // Sản phẩm chưa tồn tại, thêm mới chi tiết hóa đơn
+                int rowsAffected = DataProvider.Instance.InsertDataUsingStoredProcedure(
+                    "sp_InsertChiTietHoaDonBan",
+                    new SqlParameter[]
+                    {
+                        new SqlParameter("@ma_hoa_don", mahd),
+                        new SqlParameter("@ma_san_pham", maspduocchon),
+                        new SqlParameter("@don_gia", dssanpham[thutuspduocchon].Gia),
+                        new SqlParameter("@so_luong", soluongmua)
+                    }
+                );
+
+                if (rowsAffected > 0)
+                {
+                    LoadDataToComboBox();
                     MessageBox.Show("Thêm chi tiết hóa đơn thành công!");
+
                 }
                 else
                 {

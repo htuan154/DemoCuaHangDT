@@ -335,9 +335,9 @@
             label6.ForeColor = Color.WhiteSmoke;
             label6.Location = new Point(176, 53);
             label6.Name = "label6";
-            label6.Size = new Size(120, 19);
+            label6.Size = new Size(117, 19);
             label6.TabIndex = 2;
-            label6.Text = "Tên Khách Hàng";
+            label6.Text = "Mã Khách Hàng";
             // 
             // label5
             // 

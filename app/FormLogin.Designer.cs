@@ -51,7 +51,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(32, 33, 86);
+            panel1.BackColor = Color.FromArgb(32, 33, 150);
             panel1.Controls.Add(btnClose);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -66,6 +66,7 @@
             btnClose.Dock = DockStyle.Right;
             btnClose.FlatAppearance.BorderSize = 0;
             btnClose.FlatStyle = FlatStyle.Flat;
+            btnClose.ForeColor = SystemColors.ControlText;
             btnClose.Location = new Point(975, 0);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(37, 37);

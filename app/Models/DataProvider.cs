@@ -127,6 +127,36 @@ namespace app.Models
 
             return result;
         }
+        public int UpdateDataUsingStoredProcedure(string procedureName, SqlParameter[] parameters)
+        {
+            int result = -1;
 
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(procedureName, connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        if (parameters != null)
+                        {
+                            command.Parameters.AddRange(parameters);
+                        }
+
+                        result = command.ExecuteNonQuery(); // Execute the update command
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    // Handle SQL errors gracefully (e.g., logging, throwing a custom exception)
+                    Console.WriteLine("Error occurred during data update: " + ex.Message);
+                }
+            }
+
+            return result;
+        }
     }
 }
