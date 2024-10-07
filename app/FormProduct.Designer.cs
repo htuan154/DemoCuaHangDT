@@ -56,7 +56,7 @@
             cbXuatXu = new ComboBox();
             cbLoai = new ComboBox();
             cbHang = new ComboBox();
-            cbTenSP = new ComboBox();
+            txtTenSP = new TextBox();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)list).BeginInit();
             panel7.SuspendLayout();
@@ -315,6 +315,7 @@
             iconButton1.Size = new Size(42, 27);
             iconButton1.TabIndex = 13;
             iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
             // 
             // txtTimKiem
             // 
@@ -365,10 +366,10 @@
             // 
             // panel5
             // 
+            panel5.Controls.Add(txtTenSP);
             panel5.Controls.Add(cbXuatXu);
             panel5.Controls.Add(cbLoai);
             panel5.Controls.Add(cbHang);
-            panel5.Controls.Add(cbTenSP);
             panel5.Controls.Add(txtNCC);
             panel5.Controls.Add(label9);
             panel5.Controls.Add(label10);
@@ -422,15 +423,12 @@
             cbHang.TabIndex = 29;
             cbHang.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
-            // cbTenSP
+            // txtTenSP
             // 
-            cbTenSP.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbTenSP.FormattingEnabled = true;
-            cbTenSP.Location = new Point(249, 100);
-            cbTenSP.Name = "cbTenSP";
-            cbTenSP.Size = new Size(120, 25);
-            cbTenSP.TabIndex = 28;
-            cbTenSP.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            txtTenSP.Location = new Point(249, 96);
+            txtTenSP.Name = "txtTenSP";
+            txtTenSP.Size = new Size(120, 25);
+            txtTenSP.TabIndex = 32;
             // 
             // FormProduct
             // 
@@ -482,6 +480,6 @@
         private ComboBox cbXuatXu;
         private ComboBox cbLoai;
         private ComboBox cbHang;
-        private ComboBox cbTenSP;
+        private TextBox txtTenSP;
     }
 }

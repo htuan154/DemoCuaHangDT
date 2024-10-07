@@ -41,6 +41,7 @@
             label2 = new Label();
             label1 = new Label();
             list = new DataGridView();
+            thanhtien = new Label();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -89,6 +90,7 @@
             btnXemCTHD.TextAlign = ContentAlignment.MiddleLeft;
             btnXemCTHD.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnXemCTHD.UseVisualStyleBackColor = false;
+            btnXemCTHD.Click += btnXemCTHD_Click;
             // 
             // btnXuatExcel
             // 
@@ -111,6 +113,7 @@
             btnXuatExcel.TextAlign = ContentAlignment.MiddleLeft;
             btnXuatExcel.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnXuatExcel.UseVisualStyleBackColor = false;
+            btnXuatExcel.Click += btnXuatExcel_Click;
             // 
             // btnReset
             // 
@@ -133,6 +136,7 @@
             btnReset.TextAlign = ContentAlignment.MiddleLeft;
             btnReset.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
             // panel1
             // 
@@ -208,9 +212,9 @@
             label1.ForeColor = Color.WhiteSmoke;
             label1.Location = new Point(33, 573);
             label1.Name = "label1";
-            label1.Size = new Size(345, 29);
+            label1.Size = new Size(351, 29);
             label1.TabIndex = 18;
-            label1.Text = "Tổng Doanh Thu Của Của Hàng ";
+            label1.Text = "Tổng Doanh Thu Của Của Hàng :";
             // 
             // list
             // 
@@ -221,12 +225,25 @@
             list.Size = new Size(983, 345);
             list.TabIndex = 19;
             // 
+            // thanhtien
+            // 
+            thanhtien.AutoSize = true;
+            thanhtien.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            thanhtien.ForeColor = Color.WhiteSmoke;
+            thanhtien.Location = new Point(390, 568);
+            thanhtien.Name = "thanhtien";
+            thanhtien.Size = new Size(119, 35);
+            thanhtien.TabIndex = 20;
+            thanhtien.Text = "thanhtien";
+            thanhtien.Click += thanhtien_Click;
+            // 
             // FormStatistical
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(34, 34, 74);
             ClientSize = new Size(1052, 628);
+            Controls.Add(thanhtien);
             Controls.Add(list);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -259,5 +276,6 @@
         private Label label2;
         private Label label1;
         private DataGridView list;
+        private Label thanhtien;
     }
 }

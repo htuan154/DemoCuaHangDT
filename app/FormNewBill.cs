@@ -10,12 +10,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Microsoft.Win32;
+using OfficeOpenXml;
+using System.IO;
 namespace app
 {
     public partial class FormNewBill : Form
 
     {
+        
         List<string> mahd;
         public FormNewBill()
         {
@@ -26,7 +29,6 @@ namespace app
             LoadDataToComboBoxNV();
             LoadDataToComboBoxKH();
             list.CellClick += list_CellClick;
-
         }
         private void LoadDataToComboBoxKH()
         {
@@ -396,5 +398,11 @@ namespace app
             }
             return -1;
         }
+
+        private void btnTaoCTHD_Click(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

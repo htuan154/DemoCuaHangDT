@@ -97,6 +97,7 @@
             btnXoa.TextAlign = ContentAlignment.MiddleLeft;
             btnXoa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnExcel
             // 
@@ -119,6 +120,7 @@
             btnExcel.TextAlign = ContentAlignment.MiddleLeft;
             btnExcel.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExcel.UseVisualStyleBackColor = false;
+            btnExcel.Click += btnExcel_Click;
             // 
             // btnReset
             // 
@@ -141,6 +143,7 @@
             btnReset.TextAlign = ContentAlignment.MiddleLeft;
             btnReset.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
             // panel1
             // 

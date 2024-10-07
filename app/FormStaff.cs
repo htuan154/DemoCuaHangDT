@@ -14,6 +14,7 @@ namespace app
 {
     public partial class FormStaff : Form
     {
+        private List<string> manv = new List<string>();
         public FormStaff()
         {
             InitializeComponent();
@@ -23,8 +24,16 @@ namespace app
         private void LoadDataList()
         {
             string query = "SELECT NhanVien.ma_nhan_vien AS [Mã Nhân Viên], NhanVien.ten AS [Tên Nhân Viên], NhanVien.ngay_sinh AS [Ngày Sinh], NhanVien.so_dien_thoai AS [Số Điện Thoại], NhanVien.dia_chi AS [Địa Chỉ], TaiKhoan.tai_khoan AS [Tài Khoản], TaiKhoan.email AS [Email] ,TaiKhoan.mat_khau AS [Mật Khẩu]  FROM NhanVien JOIN TaiKhoan ON NhanVien.ma_nhan_vien = TaiKhoan.ma_nhan_vien;\r\n";
-            list.DataSource = DataProvider.Instance.ExecuteQuery(query, commandType: CommandType.Text);
+            DataTable data = DataProvider.Instance.ExecuteQuery(query, commandType: CommandType.Text);
+            list.DataSource = data;
             list.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Cập nhật danh sách mã nhân viên
+            manv.Clear(); // Đảm bảo danh sách trống trước khi thêm mới
+            foreach (DataRow row in data.Rows)
+            {
+                manv.Add(row["Mã Nhân Viên"].ToString());
+            }
         }
 
         private void FormSupplier_Load(object sender, EventArgs e)
@@ -48,11 +57,34 @@ namespace app
                 column.Width = columnWidth;
             }
         }
+        // Hàm kiểm tra mã nhân viên đã tồn tại hay chưa
+        private bool IsMaNVExist(string maNV)
+        {
+            string query = "SELECT COUNT(*) FROM NhanVien WHERE ma_nhan_vien = @ma_nhan_vien";
+
+            // Sử dụng mảng SqlParameter[]
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@ma_nhan_vien", SqlDbType.Char, 10) { Value = maNV }
+            };
+
+            int count = (int)DataProvider.Instance.ExecuteScalar(query, parameters);
+
+            return count > 0; // Trả về true nếu tồn tại, false nếu không
+        }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
             {
+                string maNV = txtMaNV.Text.Trim();
+
+                // Kiểm tra xem mã nhân viên đã tồn tại hay chưa
+                if (IsMaNVExist(maNV))
+                {
+                    MessageBox.Show("Mã nhân viên đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; // Ngừng thực hiện nếu mã đã tồn tại
+                }
                 string adminId = Account.Instance.AdminId;
 
                 string queryNhanVien = "sp_InsertNhanVien";
@@ -60,9 +92,9 @@ namespace app
                 SqlParameter[] parametersNhanVien = new SqlParameter[]
                 {
                     new SqlParameter("@ma_nhan_vien", SqlDbType.Char, 10) { Value = txtMaNV.Text.Trim() },
-                    new SqlParameter("@ma_admin", SqlDbType.Char, 10) { Value =  adminId }, 
+                    new SqlParameter("@ma_admin", SqlDbType.Char, 10) { Value =  adminId },
                     new SqlParameter("@ten", SqlDbType.NVarChar, 255) { Value = txtTenNV.Text.Trim() },
-                    new SqlParameter("@ngay_sinh", SqlDbType.Date) { Value = dtpNgaySinh.Value }, 
+                    new SqlParameter("@ngay_sinh", SqlDbType.Date) { Value = dtpNgaySinh.Value },
                     new SqlParameter("@so_dien_thoai", SqlDbType.VarChar, 20) { Value = txtSDTNV.Text.Trim() },
                     new SqlParameter("@dia_chi", SqlDbType.NVarChar, 255) { Value = txtDiaChi.Text.Trim() }
                 };
@@ -154,8 +186,8 @@ namespace app
             {
                 MessageBox.Show($"Lỗi khi cập nhật nhân viên: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        
-    }
+
+        }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -246,6 +278,33 @@ namespace app
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             ResetForm();
+        }
+        private int timkiem(string ktrmanv)
+        {
+            foreach (string t in manv) // Giả sử bạn có một mảng hoặc danh sách tên là masp
+            {
+                if (t.Trim() == ktrmanv)
+                {
+                    Console.WriteLine(t);
+                    return 1; // Trả về 1 nếu tìm thấy mã sản phẩm
+                }
+            }
+            return -1; // Trả về -1 nếu không tìm thấy
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string maNV = txtTimKiem.Text.Trim(); // Lấy mã nhân viên từ ô tìm kiếm
+            int result = timkiem(maNV);
+
+            if (result == 1)
+            {
+                MessageBox.Show("Mã nhân viên đã tìm thấy!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy mã nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

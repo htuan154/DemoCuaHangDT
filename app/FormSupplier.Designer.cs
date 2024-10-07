@@ -43,13 +43,13 @@
             btnSua = new FontAwesome.Sharp.IconButton();
             btnThem = new FontAwesome.Sharp.IconButton();
             panel5 = new Panel();
+            a = new Label();
             panel1 = new Panel();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             txtTimKiem = new TextBox();
             label2 = new Label();
             panel6 = new Panel();
             listNhaCungCap = new DataGridView();
-            a = new Label();
             panel7.SuspendLayout();
             panel5.SuspendLayout();
             panel1.SuspendLayout();
@@ -263,6 +263,17 @@
             panel5.Size = new Size(1018, 284);
             panel5.TabIndex = 5;
             // 
+            // a
+            // 
+            a.AutoSize = true;
+            a.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            a.ForeColor = Color.WhiteSmoke;
+            a.Location = new Point(11, 242);
+            a.Name = "a";
+            a.Size = new Size(197, 22);
+            a.TabIndex = 12;
+            a.Text = "Danh sách nhà cung cấp";
+            // 
             // panel1
             // 
             panel1.Controls.Add(iconButton1);
@@ -290,6 +301,7 @@
             iconButton1.Size = new Size(42, 27);
             iconButton1.TabIndex = 13;
             iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
             // 
             // txtTimKiem
             // 
@@ -326,17 +338,6 @@
             listNhaCungCap.Size = new Size(996, 283);
             listNhaCungCap.TabIndex = 0;
             listNhaCungCap.CellClick += listNhaCungCap_CellClick;
-            // 
-            // a
-            // 
-            a.AutoSize = true;
-            a.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            a.ForeColor = Color.WhiteSmoke;
-            a.Location = new Point(11, 242);
-            a.Name = "a";
-            a.Size = new Size(197, 22);
-            a.TabIndex = 12;
-            a.Text = "Danh sách nhà cung cấp";
             // 
             // FormSupplier
             // 

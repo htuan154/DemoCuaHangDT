@@ -142,6 +142,7 @@
             btnTaoCTHD.TextAlign = ContentAlignment.MiddleLeft;
             btnTaoCTHD.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnTaoCTHD.UseVisualStyleBackColor = false;
+            btnTaoCTHD.Click += btnTaoCTHD_Click;
             // 
             // btnReset
             // 

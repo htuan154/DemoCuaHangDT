@@ -31,13 +31,11 @@
             list = new DataGridView();
             label4 = new Label();
             panel3 = new Panel();
-            btnNhapHang = new FontAwesome.Sharp.IconButton();
+            btnSua = new FontAwesome.Sharp.IconButton();
             btnXoa = new FontAwesome.Sharp.IconButton();
             btnExcel = new FontAwesome.Sharp.IconButton();
             btnReset = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
-            panel4 = new Panel();
-            iconButton6 = new FontAwesome.Sharp.IconButton();
             label5 = new Label();
             dateTimePicker1 = new DateTimePicker();
             cbMaNV = new ComboBox();
@@ -62,7 +60,6 @@
             ((System.ComponentModel.ISupportInitialize)list).BeginInit();
             panel3.SuspendLayout();
             panel1.SuspendLayout();
-            panel4.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
             panel2.SuspendLayout();
@@ -90,7 +87,7 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(btnNhapHang);
+            panel3.Controls.Add(btnSua);
             panel3.Controls.Add(btnXoa);
             panel3.Controls.Add(btnExcel);
             panel3.Controls.Add(btnReset);
@@ -99,27 +96,28 @@
             panel3.Size = new Size(543, 47);
             panel3.TabIndex = 15;
             // 
-            // btnNhapHang
+            // btnSua
             // 
-            btnNhapHang.BackColor = Color.FromArgb(34, 34, 74);
-            btnNhapHang.Dock = DockStyle.Right;
-            btnNhapHang.FlatAppearance.BorderSize = 0;
-            btnNhapHang.Font = new Font("Times New Roman", 12F);
-            btnNhapHang.ForeColor = Color.Gainsboro;
-            btnNhapHang.IconChar = FontAwesome.Sharp.IconChar.Edit;
-            btnNhapHang.IconColor = Color.Gainsboro;
-            btnNhapHang.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnNhapHang.IconSize = 32;
-            btnNhapHang.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNhapHang.Location = new Point(159, 0);
-            btnNhapHang.Name = "btnNhapHang";
-            btnNhapHang.Padding = new Padding(10, 0, 20, 0);
-            btnNhapHang.Size = new Size(128, 47);
-            btnNhapHang.TabIndex = 7;
-            btnNhapHang.Text = "Sửa";
-            btnNhapHang.TextAlign = ContentAlignment.MiddleLeft;
-            btnNhapHang.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnNhapHang.UseVisualStyleBackColor = false;
+            btnSua.BackColor = Color.FromArgb(34, 34, 74);
+            btnSua.Dock = DockStyle.Right;
+            btnSua.FlatAppearance.BorderSize = 0;
+            btnSua.Font = new Font("Times New Roman", 12F);
+            btnSua.ForeColor = Color.Gainsboro;
+            btnSua.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            btnSua.IconColor = Color.Gainsboro;
+            btnSua.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnSua.IconSize = 32;
+            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSua.Location = new Point(159, 0);
+            btnSua.Name = "btnSua";
+            btnSua.Padding = new Padding(10, 0, 20, 0);
+            btnSua.Size = new Size(128, 47);
+            btnSua.TabIndex = 7;
+            btnSua.Text = "Sửa";
+            btnSua.TextAlign = ContentAlignment.MiddleLeft;
+            btnSua.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -142,6 +140,7 @@
             btnXoa.TextAlign = ContentAlignment.MiddleLeft;
             btnXoa.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnExcel
             // 
@@ -164,6 +163,7 @@
             btnExcel.TextAlign = ContentAlignment.MiddleLeft;
             btnExcel.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnExcel.UseVisualStyleBackColor = false;
+            btnExcel.Click += btnExcel_Click;
             // 
             // btnReset
             // 
@@ -186,10 +186,10 @@
             btnReset.TextAlign = ContentAlignment.MiddleLeft;
             btnReset.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click;
             // 
             // panel1
             // 
-            panel1.Controls.Add(panel4);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(cbMaNV);
@@ -202,36 +202,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(506, 194);
             panel1.TabIndex = 18;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(iconButton6);
-            panel4.Location = new Point(371, 124);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(144, 44);
-            panel4.TabIndex = 20;
-            // 
-            // iconButton6
-            // 
-            iconButton6.BackColor = Color.FromArgb(34, 34, 74);
-            iconButton6.Dock = DockStyle.Left;
-            iconButton6.FlatAppearance.BorderSize = 0;
-            iconButton6.Font = new Font("Times New Roman", 12F);
-            iconButton6.ForeColor = Color.Gainsboro;
-            iconButton6.IconChar = FontAwesome.Sharp.IconChar.Add;
-            iconButton6.IconColor = Color.Gainsboro;
-            iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton6.IconSize = 32;
-            iconButton6.ImageAlign = ContentAlignment.MiddleLeft;
-            iconButton6.Location = new Point(0, 0);
-            iconButton6.Name = "iconButton6";
-            iconButton6.Padding = new Padding(10, 0, 20, 0);
-            iconButton6.Size = new Size(127, 44);
-            iconButton6.TabIndex = 3;
-            iconButton6.Text = "Thêm";
-            iconButton6.TextAlign = ContentAlignment.MiddleLeft;
-            iconButton6.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton6.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -365,6 +335,7 @@
             iconButton1.TextAlign = ContentAlignment.MiddleLeft;
             iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
             iconButton1.UseVisualStyleBackColor = false;
+            iconButton1.Click += iconButton1_Click;
             // 
             // cbChonSP
             // 
@@ -473,7 +444,6 @@
             panel3.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel6.ResumeLayout(false);
@@ -487,7 +457,7 @@
         private DataGridView list;
         private Label label4;
         private Panel panel3;
-        private FontAwesome.Sharp.IconButton btnNhapHang;
+        private FontAwesome.Sharp.IconButton btnSua;
         private FontAwesome.Sharp.IconButton btnXoa;
         private FontAwesome.Sharp.IconButton btnExcel;
         private FontAwesome.Sharp.IconButton btnReset;
@@ -500,8 +470,6 @@
         private Label label1;
         private TextBox txtMaPN;
         private Label label5;
-        private Panel panel4;
-        private FontAwesome.Sharp.IconButton iconButton6;
         private Label label6;
         private Panel panel5;
         private Panel panel6;

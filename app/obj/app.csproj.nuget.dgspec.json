@@ -50,13 +50,33 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "CrystalDecisions.CrystalReports.Engine": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "CrystalDecisions.ReportSource": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "CrystalDecisions.Shared": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "CrystalDecisions.Windows.Forms": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
             "FontAwesome.Sharp": {
               "target": "Package",
               "version": "[6.6.0, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.2.1, )"
+              "version": "[5.2.2, )"
             },
             "dein.ToolBox": {
               "target": "Package",

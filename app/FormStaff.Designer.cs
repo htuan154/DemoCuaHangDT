@@ -226,6 +226,7 @@
             iconButton1.Size = new Size(42, 27);
             iconButton1.TabIndex = 13;
             iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
             // 
             // txtTimKiem
             // 

@@ -166,6 +166,7 @@
             iconButton1.Size = new Size(42, 27);
             iconButton1.TabIndex = 13;
             iconButton1.UseVisualStyleBackColor = true;
+            iconButton1.Click += iconButton1_Click;
             // 
             // txtTimKiem
             // 
@@ -173,6 +174,7 @@
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.Size = new Size(394, 27);
             txtTimKiem.TabIndex = 11;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
             // 
             // label2
             // 
