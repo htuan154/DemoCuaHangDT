@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Wordspace\\app_ngay9_9_2024\\app\\app.csproj": {}
+    "C:\\Wordspace\\app 2\\app\\app\\app.csproj": {}
   },
   "projects": {
-    "C:\\Wordspace\\app_ngay9_9_2024\\app\\app.csproj": {
+    "C:\\Wordspace\\app 2\\app\\app\\app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Wordspace\\app_ngay9_9_2024\\app\\app.csproj",
+        "projectUniqueName": "C:\\Wordspace\\app 2\\app\\app\\app.csproj",
         "projectName": "app",
-        "projectPath": "C:\\Wordspace\\app_ngay9_9_2024\\app\\app.csproj",
+        "projectPath": "C:\\Wordspace\\app 2\\app\\app\\app.csproj",
         "packagesPath": "C:\\Users\\htuan\\.nuget\\packages\\",
-        "outputPath": "C:\\Wordspace\\app_ngay9_9_2024\\app\\obj\\",
+        "outputPath": "C:\\Wordspace\\app 2\\app\\app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,6 +77,14 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.2.2, )"
+            },
+            "Microsoft.ReportingServices.ReportViewerControl.WebForms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
+            },
+            "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
+              "target": "Package",
+              "version": "[150.1652.0, )"
             },
             "dein.ToolBox": {
               "target": "Package",
